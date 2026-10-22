@@ -1,0 +1,3002 @@
+[
+  {
+    "valor": 4278.28,
+    "unidad": "COP",
+    "vigenciadesde": "2024-09-12",
+    "vigenciahasta": "2024-09-12"
+  },
+  {
+    "valor": 4236.63,
+    "unidad": "COP",
+    "vigenciadesde": "2024-09-13",
+    "vigenciahasta": "2024-09-13"
+  },
+  {
+    "valor": 4172.13,
+    "unidad": "COP",
+    "vigenciadesde": "2024-09-14",
+    "vigenciahasta": "2024-09-16"
+  },
+  {
+    "valor": 4220.58,
+    "unidad": "COP",
+    "vigenciadesde": "2024-09-17",
+    "vigenciahasta": "2024-09-17"
+  },
+  {
+    "valor": 4239.33,
+    "unidad": "COP",
+    "vigenciadesde": "2024-09-18",
+    "vigenciahasta": "2024-09-18"
+  },
+  {
+    "valor": 4189.46,
+    "unidad": "COP",
+    "vigenciadesde": "2024-09-19",
+    "vigenciahasta": "2024-09-19"
+  },
+  {
+    "valor": 4175.1,
+    "unidad": "COP",
+    "vigenciadesde": "2024-09-20",
+    "vigenciahasta": "2024-09-20"
+  },
+  {
+    "valor": 4156.89,
+    "unidad": "COP",
+    "vigenciadesde": "2024-09-21",
+    "vigenciahasta": "2024-09-23"
+  },
+  {
+    "valor": 4155.31,
+    "unidad": "COP",
+    "vigenciadesde": "2024-09-24",
+    "vigenciahasta": "2024-09-24"
+  },
+  {
+    "valor": 4139.43,
+    "unidad": "COP",
+    "vigenciadesde": "2024-09-25",
+    "vigenciahasta": "2024-09-25"
+  },
+  {
+    "valor": 4192.74,
+    "unidad": "COP",
+    "vigenciadesde": "2024-09-26",
+    "vigenciahasta": "2024-09-26"
+  },
+  {
+    "valor": 4188.11,
+    "unidad": "COP",
+    "vigenciadesde": "2024-09-27",
+    "vigenciahasta": "2024-09-27"
+  },
+  {
+    "valor": 4164.21,
+    "unidad": "COP",
+    "vigenciadesde": "2024-09-28",
+    "vigenciahasta": "2024-09-30"
+  },
+  {
+    "valor": 4178.3,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-01",
+    "vigenciahasta": "2024-10-01"
+  },
+  {
+    "valor": 4224.21,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-02",
+    "vigenciahasta": "2024-10-02"
+  },
+  {
+    "valor": 4203.43,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-03",
+    "vigenciahasta": "2024-10-03"
+  },
+  {
+    "valor": 4197.73,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-04",
+    "vigenciahasta": "2024-10-04"
+  },
+  {
+    "valor": 4173.66,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-05",
+    "vigenciahasta": "2024-10-07"
+  },
+  {
+    "valor": 4194.97,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-08",
+    "vigenciahasta": "2024-10-08"
+  },
+  {
+    "valor": 4233.54,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-09",
+    "vigenciahasta": "2024-10-09"
+  },
+  {
+    "valor": 4233.17,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-10",
+    "vigenciahasta": "2024-10-10"
+  },
+  {
+    "valor": 4217.4,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-11",
+    "vigenciahasta": "2024-10-11"
+  },
+  {
+    "valor": 4192.56,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-12",
+    "vigenciahasta": "2024-10-15"
+  },
+  {
+    "valor": 4244.84,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-16",
+    "vigenciahasta": "2024-10-16"
+  },
+  {
+    "valor": 4266.2,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-17",
+    "vigenciahasta": "2024-10-17"
+  },
+  {
+    "valor": 4263.17,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-18",
+    "vigenciahasta": "2024-10-18"
+  },
+  {
+    "valor": 4252.15,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-19",
+    "vigenciahasta": "2024-10-21"
+  },
+  {
+    "valor": 4286.96,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-22",
+    "vigenciahasta": "2024-10-22"
+  },
+  {
+    "valor": 4262.3,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-23",
+    "vigenciahasta": "2024-10-23"
+  },
+  {
+    "valor": 4293.91,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-24",
+    "vigenciahasta": "2024-10-24"
+  },
+  {
+    "valor": 4311.83,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-25",
+    "vigenciahasta": "2024-10-25"
+  },
+  {
+    "valor": 4316.73,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-26",
+    "vigenciahasta": "2024-10-28"
+  },
+  {
+    "valor": 4342.9,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-29",
+    "vigenciahasta": "2024-10-29"
+  },
+  {
+    "valor": 4367.39,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-30",
+    "vigenciahasta": "2024-10-30"
+  },
+  {
+    "valor": 4413.46,
+    "unidad": "COP",
+    "vigenciadesde": "2024-10-31",
+    "vigenciahasta": "2024-10-31"
+  },
+  {
+    "valor": 4409.57,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-01",
+    "vigenciahasta": "2024-11-01"
+  },
+  {
+    "valor": 4414,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-02",
+    "vigenciahasta": "2024-11-05"
+  },
+  {
+    "valor": 4421.86,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-06",
+    "vigenciahasta": "2024-11-06"
+  },
+  {
+    "valor": 4430.4,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-07",
+    "vigenciahasta": "2024-11-07"
+  },
+  {
+    "valor": 4344.55,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-08",
+    "vigenciahasta": "2024-11-08"
+  },
+  {
+    "valor": 4346.7,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-09",
+    "vigenciahasta": "2024-11-12"
+  },
+  {
+    "valor": 4413.79,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-13",
+    "vigenciahasta": "2024-11-13"
+  },
+  {
+    "valor": 4478.21,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-14",
+    "vigenciahasta": "2024-11-14"
+  },
+  {
+    "valor": 4475.57,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-15",
+    "vigenciahasta": "2024-11-15"
+  },
+  {
+    "valor": 4454.68,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-16",
+    "vigenciahasta": "2024-11-18"
+  },
+  {
+    "valor": 4400.69,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-19",
+    "vigenciahasta": "2024-11-19"
+  },
+  {
+    "valor": 4401.34,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-20",
+    "vigenciahasta": "2024-11-20"
+  },
+  {
+    "valor": 4414.06,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-21",
+    "vigenciahasta": "2024-11-21"
+  },
+  {
+    "valor": 4387.09,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-22",
+    "vigenciahasta": "2024-11-22"
+  },
+  {
+    "valor": 4418.58,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-23",
+    "vigenciahasta": "2024-11-25"
+  },
+  {
+    "valor": 4381.99,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-26",
+    "vigenciahasta": "2024-11-26"
+  },
+  {
+    "valor": 4405.96,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-27",
+    "vigenciahasta": "2024-11-27"
+  },
+  {
+    "valor": 4406.16,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-28",
+    "vigenciahasta": "2024-11-29"
+  },
+  {
+    "valor": 4419.59,
+    "unidad": "COP",
+    "vigenciadesde": "2024-11-30",
+    "vigenciahasta": "2024-12-02"
+  },
+  {
+    "valor": 4462.97,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-03",
+    "vigenciahasta": "2024-12-03"
+  },
+  {
+    "valor": 4443.53,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-04",
+    "vigenciahasta": "2024-12-04"
+  },
+  {
+    "valor": 4424.56,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-05",
+    "vigenciahasta": "2024-12-05"
+  },
+  {
+    "valor": 4407.13,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-06",
+    "vigenciahasta": "2024-12-06"
+  },
+  {
+    "valor": 4396.52,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-07",
+    "vigenciahasta": "2024-12-09"
+  },
+  {
+    "valor": 4379.71,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-10",
+    "vigenciahasta": "2024-12-10"
+  },
+  {
+    "valor": 4377.34,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-11",
+    "vigenciahasta": "2024-12-11"
+  },
+  {
+    "valor": 4361.22,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-12",
+    "vigenciahasta": "2024-12-12"
+  },
+  {
+    "valor": 4335.2,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-13",
+    "vigenciahasta": "2024-12-13"
+  },
+  {
+    "valor": 4341.32,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-14",
+    "vigenciahasta": "2024-12-16"
+  },
+  {
+    "valor": 4324.19,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-17",
+    "vigenciahasta": "2024-12-17"
+  },
+  {
+    "valor": 4345.32,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-18",
+    "vigenciahasta": "2024-12-18"
+  },
+  {
+    "valor": 4359.11,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-19",
+    "vigenciahasta": "2024-12-19"
+  },
+  {
+    "valor": 4394.5,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-20",
+    "vigenciahasta": "2024-12-20"
+  },
+  {
+    "valor": 4374.62,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-21",
+    "vigenciahasta": "2024-12-23"
+  },
+  {
+    "valor": 4395.44,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-24",
+    "vigenciahasta": "2024-12-24"
+  },
+  {
+    "valor": 4380.94,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-25",
+    "vigenciahasta": "2024-12-26"
+  },
+  {
+    "valor": 4375.86,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-27",
+    "vigenciahasta": "2024-12-27"
+  },
+  {
+    "valor": 4401.98,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-28",
+    "vigenciahasta": "2024-12-30"
+  },
+  {
+    "valor": 4409.15,
+    "unidad": "COP",
+    "vigenciadesde": "2024-12-31",
+    "vigenciahasta": "2025-01-02"
+  },
+  {
+    "valor": 4410.5,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-03",
+    "vigenciahasta": "2025-01-03"
+  },
+  {
+    "valor": 4355.51,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-04",
+    "vigenciahasta": "2025-01-07"
+  },
+  {
+    "valor": 4342.31,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-08",
+    "vigenciahasta": "2025-01-08"
+  },
+  {
+    "valor": 4347.42,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-09",
+    "vigenciahasta": "2025-01-09"
+  },
+  {
+    "valor": 4321.19,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-10",
+    "vigenciahasta": "2025-01-10"
+  },
+  {
+    "valor": 4343.48,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-11",
+    "vigenciahasta": "2025-01-13"
+  },
+  {
+    "valor": 4331.23,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-14",
+    "vigenciahasta": "2025-01-14"
+  },
+  {
+    "valor": 4300.24,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-15",
+    "vigenciahasta": "2025-01-15"
+  },
+  {
+    "valor": 4294.11,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-16",
+    "vigenciahasta": "2025-01-16"
+  },
+  {
+    "valor": 4338.15,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-17",
+    "vigenciahasta": "2025-01-17"
+  },
+  {
+    "valor": 4344.27,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-18",
+    "vigenciahasta": "2025-01-21"
+  },
+  {
+    "valor": 4307.07,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-22",
+    "vigenciahasta": "2025-01-22"
+  },
+  {
+    "valor": 4278.01,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-23",
+    "vigenciahasta": "2025-01-23"
+  },
+  {
+    "valor": 4245.65,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-24",
+    "vigenciahasta": "2025-01-24"
+  },
+  {
+    "valor": 4188.46,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-25",
+    "vigenciahasta": "2025-01-27"
+  },
+  {
+    "valor": 4220.86,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-28",
+    "vigenciahasta": "2025-01-28"
+  },
+  {
+    "valor": 4219,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-29",
+    "vigenciahasta": "2025-01-29"
+  },
+  {
+    "valor": 4195.6,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-30",
+    "vigenciahasta": "2025-01-30"
+  },
+  {
+    "valor": 4170.01,
+    "unidad": "COP",
+    "vigenciadesde": "2025-01-31",
+    "vigenciahasta": "2025-01-31"
+  },
+  {
+    "valor": 4183.93,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-01",
+    "vigenciahasta": "2025-02-03"
+  },
+  {
+    "valor": 4198.66,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-04",
+    "vigenciahasta": "2025-02-04"
+  },
+  {
+    "valor": 4153.54,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-05",
+    "vigenciahasta": "2025-02-05"
+  },
+  {
+    "valor": 4180.06,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-06",
+    "vigenciahasta": "2025-02-06"
+  },
+  {
+    "valor": 4150.99,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-07",
+    "vigenciahasta": "2025-02-07"
+  },
+  {
+    "valor": 4113.7,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-08",
+    "vigenciahasta": "2025-02-10"
+  },
+  {
+    "valor": 4132.93,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-11",
+    "vigenciahasta": "2025-02-11"
+  },
+  {
+    "valor": 4153.8,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-12",
+    "vigenciahasta": "2025-02-12"
+  },
+  {
+    "valor": 4165.07,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-13",
+    "vigenciahasta": "2025-02-13"
+  },
+  {
+    "valor": 4161.46,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-14",
+    "vigenciahasta": "2025-02-14"
+  },
+  {
+    "valor": 4100.66,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-15",
+    "vigenciahasta": "2025-02-18"
+  },
+  {
+    "valor": 4111.38,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-19",
+    "vigenciahasta": "2025-02-19"
+  },
+  {
+    "valor": 4098.67,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-20",
+    "vigenciahasta": "2025-02-20"
+  },
+  {
+    "valor": 4077.56,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-21",
+    "vigenciahasta": "2025-02-21"
+  },
+  {
+    "valor": 4073.56,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-22",
+    "vigenciahasta": "2025-02-24"
+  },
+  {
+    "valor": 4112.63,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-25",
+    "vigenciahasta": "2025-02-25"
+  },
+  {
+    "valor": 4126.54,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-26",
+    "vigenciahasta": "2025-02-26"
+  },
+  {
+    "valor": 4123.1,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-27",
+    "vigenciahasta": "2025-02-27"
+  },
+  {
+    "valor": 4120.11,
+    "unidad": "COP",
+    "vigenciadesde": "2025-02-28",
+    "vigenciahasta": "2025-02-28"
+  },
+  {
+    "valor": 4134.04,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-01",
+    "vigenciahasta": "2025-03-03"
+  },
+  {
+    "valor": 4116.61,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-04",
+    "vigenciahasta": "2025-03-04"
+  },
+  {
+    "valor": 4144.18,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-05",
+    "vigenciahasta": "2025-03-05"
+  },
+  {
+    "valor": 4125.63,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-06",
+    "vigenciahasta": "2025-03-06"
+  },
+  {
+    "valor": 4104.56,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-07",
+    "vigenciahasta": "2025-03-07"
+  },
+  {
+    "valor": 4116.8,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-08",
+    "vigenciahasta": "2025-03-10"
+  },
+  {
+    "valor": 4161.96,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-11",
+    "vigenciahasta": "2025-03-11"
+  },
+  {
+    "valor": 4152.76,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-12",
+    "vigenciahasta": "2025-03-12"
+  },
+  {
+    "valor": 4110.08,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-13",
+    "vigenciahasta": "2025-03-13"
+  },
+  {
+    "valor": 4114.18,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-14",
+    "vigenciahasta": "2025-03-14"
+  },
+  {
+    "valor": 4102.67,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-15",
+    "vigenciahasta": "2025-03-17"
+  },
+  {
+    "valor": 4076.7,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-18",
+    "vigenciahasta": "2025-03-18"
+  },
+  {
+    "valor": 4126.03,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-19",
+    "vigenciahasta": "2025-03-19"
+  },
+  {
+    "valor": 4143.14,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-20",
+    "vigenciahasta": "2025-03-20"
+  },
+  {
+    "valor": 4187.72,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-21",
+    "vigenciahasta": "2025-03-21"
+  },
+  {
+    "valor": 4168.82,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-22",
+    "vigenciahasta": "2025-03-25"
+  },
+  {
+    "valor": 4107.14,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-26",
+    "vigenciahasta": "2025-03-26"
+  },
+  {
+    "valor": 4131.42,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-27",
+    "vigenciahasta": "2025-03-27"
+  },
+  {
+    "valor": 4152.59,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-28",
+    "vigenciahasta": "2025-03-28"
+  },
+  {
+    "valor": 4192.57,
+    "unidad": "COP",
+    "vigenciadesde": "2025-03-29",
+    "vigenciahasta": "2025-03-31"
+  },
+  {
+    "valor": 4191.79,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-01",
+    "vigenciahasta": "2025-04-01"
+  },
+  {
+    "valor": 4149.24,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-02",
+    "vigenciahasta": "2025-04-02"
+  },
+  {
+    "valor": 4146.07,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-03",
+    "vigenciahasta": "2025-04-03"
+  },
+  {
+    "valor": 4130.01,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-04",
+    "vigenciahasta": "2025-04-04"
+  },
+  {
+    "valor": 4274.03,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-05",
+    "vigenciahasta": "2025-04-07"
+  },
+  {
+    "valor": 4374.53,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-08",
+    "vigenciahasta": "2025-04-08"
+  },
+  {
+    "valor": 4387.98,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-09",
+    "vigenciahasta": "2025-04-09"
+  },
+  {
+    "valor": 4416.69,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-10",
+    "vigenciahasta": "2025-04-10"
+  },
+  {
+    "valor": 4351.55,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-11",
+    "vigenciahasta": "2025-04-11"
+  },
+  {
+    "valor": 4338.36,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-12",
+    "vigenciahasta": "2025-04-14"
+  },
+  {
+    "valor": 4286.17,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-15",
+    "vigenciahasta": "2025-04-15"
+  },
+  {
+    "valor": 4329.9,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-16",
+    "vigenciahasta": "2025-04-16"
+  },
+  {
+    "valor": 4306.54,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-17",
+    "vigenciahasta": "2025-04-21"
+  },
+  {
+    "valor": 4272.83,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-22",
+    "vigenciahasta": "2025-04-22"
+  },
+  {
+    "valor": 4283.22,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-23",
+    "vigenciahasta": "2025-04-23"
+  },
+  {
+    "valor": 4298.31,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-24",
+    "vigenciahasta": "2025-04-24"
+  },
+  {
+    "valor": 4274.57,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-25",
+    "vigenciahasta": "2025-04-25"
+  },
+  {
+    "valor": 4239.62,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-26",
+    "vigenciahasta": "2025-04-28"
+  },
+  {
+    "valor": 4227.32,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-29",
+    "vigenciahasta": "2025-04-29"
+  },
+  {
+    "valor": 4198.83,
+    "unidad": "COP",
+    "vigenciadesde": "2025-04-30",
+    "vigenciahasta": "2025-04-30"
+  },
+  {
+    "valor": 4222.25,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-01",
+    "vigenciahasta": "2025-05-02"
+  },
+  {
+    "valor": 4243.8,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-03",
+    "vigenciahasta": "2025-05-05"
+  },
+  {
+    "valor": 4283.62,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-06",
+    "vigenciahasta": "2025-05-06"
+  },
+  {
+    "valor": 4305.02,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-07",
+    "vigenciahasta": "2025-05-07"
+  },
+  {
+    "valor": 4306.79,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-08",
+    "vigenciahasta": "2025-05-08"
+  },
+  {
+    "valor": 4260.22,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-09",
+    "vigenciahasta": "2025-05-09"
+  },
+  {
+    "valor": 4239.23,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-10",
+    "vigenciahasta": "2025-05-12"
+  },
+  {
+    "valor": 4218.6,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-13",
+    "vigenciahasta": "2025-05-13"
+  },
+  {
+    "valor": 4204.63,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-14",
+    "vigenciahasta": "2025-05-14"
+  },
+  {
+    "valor": 4194.18,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-15",
+    "vigenciahasta": "2025-05-15"
+  },
+  {
+    "valor": 4196.66,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-16",
+    "vigenciahasta": "2025-05-16"
+  },
+  {
+    "valor": 4194.28,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-17",
+    "vigenciahasta": "2025-05-19"
+  },
+  {
+    "valor": 4168.03,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-20",
+    "vigenciahasta": "2025-05-20"
+  },
+  {
+    "valor": 4172.76,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-21",
+    "vigenciahasta": "2025-05-21"
+  },
+  {
+    "valor": 4169.47,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-22",
+    "vigenciahasta": "2025-05-22"
+  },
+  {
+    "valor": 4176.54,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-23",
+    "vigenciahasta": "2025-05-23"
+  },
+  {
+    "valor": 4165.41,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-24",
+    "vigenciahasta": "2025-05-27"
+  },
+  {
+    "valor": 4128.15,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-28",
+    "vigenciahasta": "2025-05-28"
+  },
+  {
+    "valor": 4126.44,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-29",
+    "vigenciahasta": "2025-05-29"
+  },
+  {
+    "valor": 4106.79,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-30",
+    "vigenciahasta": "2025-05-30"
+  },
+  {
+    "valor": 4148.72,
+    "unidad": "COP",
+    "vigenciadesde": "2025-05-31",
+    "vigenciahasta": "2025-06-03"
+  },
+  {
+    "valor": 4136.71,
+    "unidad": "COP",
+    "vigenciadesde": "2025-06-04",
+    "vigenciahasta": "2025-06-04"
+  },
+  {
+    "valor": 4107.85,
+    "unidad": "COP",
+    "vigenciadesde": "2025-06-05",
+    "vigenciahasta": "2025-06-05"
+  },
+  {
+    "valor": 4097.66,
+    "unidad": "COP",
+    "vigenciadesde": "2025-06-06",
+    "vigenciahasta": "2025-06-06"
+  },
+  {
+    "valor": 4138.72,
+    "unidad": "COP",
+    "vigenciadesde": "2025-06-07",
+    "vigenciahasta": "2025-06-09"
+  },
+  {
+    "valor": 4138.53,
+    "unidad": "COP",
+    "vigenciadesde": "2025-06-10",
+    "vigenciahasta": "2025-06-10"
+  },
+  {
+    "valor": 4190.9,
+    "unidad": "COP",
+    "vigenciadesde": "2025-06-11",
+    "vigenciahasta": "2025-06-11"
+  },
+  {
+    "valor": 4190.61,
+    "unidad": "COP",
+    "vigenciadesde": "2025-06-12",
+    "vigenciahasta": "2025-06-12"
+  },
+  {
+    "valor": 4169.13,
+    "unidad": "COP",
+    "vigenciadesde": "2025-06-13",
+    "vigenciahasta": "2025-06-13"
+  },
+  {
+    "valor": 4147.34,
+    "unidad": "COP",
+    "vigenciadesde": "2025-06-14",
+    "vigenciahasta": "2025-06-16"
+  },
+  {
+    "valor": 4096.44,
+    "unidad": "COP",
+    "vigenciadesde": "2025-06-17",
+    "vigenciahasta": "2025-06-17"
+  },
+  {
+    "valor": 4098.83,
+    "unidad": "COP",
+    "vigenciadesde": "2025-06-18",
+    "vigenciahasta": "2025-06-18"
+  },
+  {
+    "valor": 4076.32,
+    "unidad": "COP",
+    "vigenciadesde": "2025-06-19",
+    "vigenciahasta": "2025-06-20"
+  },
+  {
+    "valor": 4080.06,
+    "unidad": "COP",
+    "vigenciadesde": "2025-06-21",
+    "vigenciahasta": "2025-06-24"
+  },
+  {
+    "valor": 4081.15,
+    "unidad": "COP",
+    "vigenciadesde": "2025-06-25",
+    "vigenciahasta": "2025-06-25"
+  },
+  {
+    "valor": 4067.64,
+    "unidad": "COP",
+    "vigenciadesde": "2025-06-26",
+    "vigenciahasta": "2025-06-26"
+  },
+  {
+    "valor": 4042.87,
+    "unidad": "COP",
+    "vigenciadesde": "2025-06-27",
+    "vigenciahasta": "2025-06-27"
+  },
+  {
+    "valor": 4069.67,
+    "unidad": "COP",
+    "vigenciadesde": "2025-06-28",
+    "vigenciahasta": "2025-07-01"
+  },
+  {
+    "valor": 4047.71,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-02",
+    "vigenciahasta": "2025-07-02"
+  },
+  {
+    "valor": 4006.46,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-03",
+    "vigenciahasta": "2025-07-03"
+  },
+  {
+    "valor": 3974.37,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-04",
+    "vigenciahasta": "2025-07-07"
+  },
+  {
+    "valor": 4022.29,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-08",
+    "vigenciahasta": "2025-07-08"
+  },
+  {
+    "valor": 4054.13,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-09",
+    "vigenciahasta": "2025-07-09"
+  },
+  {
+    "valor": 4026.09,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-10",
+    "vigenciahasta": "2025-07-10"
+  },
+  {
+    "valor": 4013.5,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-11",
+    "vigenciahasta": "2025-07-11"
+  },
+  {
+    "valor": 4003.9,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-12",
+    "vigenciahasta": "2025-07-14"
+  },
+  {
+    "valor": 4011.79,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-15",
+    "vigenciahasta": "2025-07-15"
+  },
+  {
+    "valor": 4015.04,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-16",
+    "vigenciahasta": "2025-07-16"
+  },
+  {
+    "valor": 4031.86,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-17",
+    "vigenciahasta": "2025-07-17"
+  },
+  {
+    "valor": 4016.44,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-18",
+    "vigenciahasta": "2025-07-18"
+  },
+  {
+    "valor": 4000.61,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-19",
+    "vigenciahasta": "2025-07-21"
+  },
+  {
+    "valor": 4026.27,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-22",
+    "vigenciahasta": "2025-07-22"
+  },
+  {
+    "valor": 4061.36,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-23",
+    "vigenciahasta": "2025-07-23"
+  },
+  {
+    "valor": 4052.86,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-24",
+    "vigenciahasta": "2025-07-24"
+  },
+  {
+    "valor": 4063.31,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-25",
+    "vigenciahasta": "2025-07-25"
+  },
+  {
+    "valor": 4110.48,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-26",
+    "vigenciahasta": "2025-07-28"
+  },
+  {
+    "valor": 4170.59,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-29",
+    "vigenciahasta": "2025-07-29"
+  },
+  {
+    "valor": 4154.79,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-30",
+    "vigenciahasta": "2025-07-30"
+  },
+  {
+    "valor": 4179.69,
+    "unidad": "COP",
+    "vigenciadesde": "2025-07-31",
+    "vigenciahasta": "2025-07-31"
+  },
+  {
+    "valor": 4186.71,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-01",
+    "vigenciahasta": "2025-08-01"
+  },
+  {
+    "valor": 4129.42,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-02",
+    "vigenciahasta": "2025-08-04"
+  },
+  {
+    "valor": 4097.38,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-05",
+    "vigenciahasta": "2025-08-05"
+  },
+  {
+    "valor": 4093.12,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-06",
+    "vigenciahasta": "2025-08-06"
+  },
+  {
+    "valor": 4049.35,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-07",
+    "vigenciahasta": "2025-08-08"
+  },
+  {
+    "valor": 4034.74,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-09",
+    "vigenciahasta": "2025-08-11"
+  },
+  {
+    "valor": 4045.87,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-12",
+    "vigenciahasta": "2025-08-12"
+  },
+  {
+    "valor": 4017.12,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-13",
+    "vigenciahasta": "2025-08-13"
+  },
+  {
+    "valor": 4020.64,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-14",
+    "vigenciahasta": "2025-08-14"
+  },
+  {
+    "valor": 4048.74,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-15",
+    "vigenciahasta": "2025-08-15"
+  },
+  {
+    "valor": 4019.24,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-16",
+    "vigenciahasta": "2025-08-19"
+  },
+  {
+    "valor": 4036.42,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-20",
+    "vigenciahasta": "2025-08-20"
+  },
+  {
+    "valor": 4025.51,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-21",
+    "vigenciahasta": "2025-08-21"
+  },
+  {
+    "valor": 4034.18,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-22",
+    "vigenciahasta": "2025-08-22"
+  },
+  {
+    "valor": 4008.7,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-23",
+    "vigenciahasta": "2025-08-25"
+  },
+  {
+    "valor": 4017.44,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-26",
+    "vigenciahasta": "2025-08-26"
+  },
+  {
+    "valor": 4044.51,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-27",
+    "vigenciahasta": "2025-08-27"
+  },
+  {
+    "valor": 4051.97,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-28",
+    "vigenciahasta": "2025-08-28"
+  },
+  {
+    "valor": 4019.09,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-29",
+    "vigenciahasta": "2025-08-29"
+  },
+  {
+    "valor": 4018.41,
+    "unidad": "COP",
+    "vigenciadesde": "2025-08-30",
+    "vigenciahasta": "2025-09-02"
+  },
+  {
+    "valor": 4016.94,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-03",
+    "vigenciahasta": "2025-09-03"
+  },
+  {
+    "valor": 4002.86,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-04",
+    "vigenciahasta": "2025-09-04"
+  },
+  {
+    "valor": 3991.09,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-05",
+    "vigenciahasta": "2025-09-05"
+  },
+  {
+    "valor": 3960.94,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-06",
+    "vigenciahasta": "2025-09-08"
+  },
+  {
+    "valor": 3945.29,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-09",
+    "vigenciahasta": "2025-09-09"
+  },
+  {
+    "valor": 3919.13,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-10",
+    "vigenciahasta": "2025-09-10"
+  },
+  {
+    "valor": 3921.58,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-11",
+    "vigenciahasta": "2025-09-11"
+  },
+  {
+    "valor": 3903.18,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-12",
+    "vigenciahasta": "2025-09-12"
+  },
+  {
+    "valor": 3906.24,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-13",
+    "vigenciahasta": "2025-09-15"
+  },
+  {
+    "valor": 3897.57,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-16",
+    "vigenciahasta": "2025-09-16"
+  },
+  {
+    "valor": 3881.92,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-17",
+    "vigenciahasta": "2025-09-17"
+  },
+  {
+    "valor": 3880.01,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-18",
+    "vigenciahasta": "2025-09-18"
+  },
+  {
+    "valor": 3892.45,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-19",
+    "vigenciahasta": "2025-09-19"
+  },
+  {
+    "valor": 3891.19,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-20",
+    "vigenciahasta": "2025-09-22"
+  },
+  {
+    "valor": 3852.16,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-23",
+    "vigenciahasta": "2025-09-23"
+  },
+  {
+    "valor": 3844.47,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-24",
+    "vigenciahasta": "2025-09-24"
+  },
+  {
+    "valor": 3881.26,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-25",
+    "vigenciahasta": "2025-09-25"
+  },
+  {
+    "valor": 3898.87,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-26",
+    "vigenciahasta": "2025-09-26"
+  },
+  {
+    "valor": 3908.12,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-27",
+    "vigenciahasta": "2025-09-29"
+  },
+  {
+    "valor": 3901.29,
+    "unidad": "COP",
+    "vigenciadesde": "2025-09-30",
+    "vigenciahasta": "2025-09-30"
+  },
+  {
+    "valor": 3923.55,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-01",
+    "vigenciahasta": "2025-10-01"
+  },
+  {
+    "valor": 3890,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-02",
+    "vigenciahasta": "2025-10-02"
+  },
+  {
+    "valor": 3897.64,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-03",
+    "vigenciahasta": "2025-10-03"
+  },
+  {
+    "valor": 3874.18,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-04",
+    "vigenciahasta": "2025-10-06"
+  },
+  {
+    "valor": 3853.19,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-07",
+    "vigenciahasta": "2025-10-07"
+  },
+  {
+    "valor": 3867.54,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-08",
+    "vigenciahasta": "2025-10-08"
+  },
+  {
+    "valor": 3879.8,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-09",
+    "vigenciahasta": "2025-10-09"
+  },
+  {
+    "valor": 3894.99,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-10",
+    "vigenciahasta": "2025-10-10"
+  },
+  {
+    "valor": 3913.24,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-11",
+    "vigenciahasta": "2025-10-14"
+  },
+  {
+    "valor": 3933.31,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-15",
+    "vigenciahasta": "2025-10-15"
+  },
+  {
+    "valor": 3902.16,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-16",
+    "vigenciahasta": "2025-10-16"
+  },
+  {
+    "valor": 3877.07,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-17",
+    "vigenciahasta": "2025-10-17"
+  },
+  {
+    "valor": 3808.12,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-18",
+    "vigenciahasta": "2025-10-20"
+  },
+  {
+    "valor": 3877.26,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-21",
+    "vigenciahasta": "2025-10-21"
+  },
+  {
+    "valor": 3876.6,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-22",
+    "vigenciahasta": "2025-10-22"
+  },
+  {
+    "valor": 3900.82,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-23",
+    "vigenciahasta": "2025-10-23"
+  },
+  {
+    "valor": 3888.76,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-24",
+    "vigenciahasta": "2025-10-24"
+  },
+  {
+    "valor": 3858.63,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-25",
+    "vigenciahasta": "2025-10-27"
+  },
+  {
+    "valor": 3844.2,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-28",
+    "vigenciahasta": "2025-10-28"
+  },
+  {
+    "valor": 3874.84,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-29",
+    "vigenciahasta": "2025-10-29"
+  },
+  {
+    "valor": 3885.29,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-30",
+    "vigenciahasta": "2025-10-30"
+  },
+  {
+    "valor": 3870.42,
+    "unidad": "COP",
+    "vigenciadesde": "2025-10-31",
+    "vigenciahasta": "2025-10-31"
+  },
+  {
+    "valor": 3860.12,
+    "unidad": "COP",
+    "vigenciadesde": "2025-11-01",
+    "vigenciahasta": "2025-11-04"
+  },
+  {
+    "valor": 3872.47,
+    "unidad": "COP",
+    "vigenciadesde": "2025-11-05",
+    "vigenciahasta": "2025-11-05"
+  },
+  {
+    "valor": 3839.47,
+    "unidad": "COP",
+    "vigenciadesde": "2025-11-06",
+    "vigenciahasta": "2025-11-06"
+  },
+  {
+    "valor": 3807.06,
+    "unidad": "COP",
+    "vigenciadesde": "2025-11-07",
+    "vigenciahasta": "2025-11-07"
+  },
+  {
+    "valor": 3779.2,
+    "unidad": "COP",
+    "vigenciadesde": "2025-11-08",
+    "vigenciahasta": "2025-11-10"
+  },
+  {
+    "valor": 3760.93,
+    "unidad": "COP",
+    "vigenciadesde": "2025-11-11",
+    "vigenciahasta": "2025-11-12"
+  },
+  {
+    "valor": 3719.71,
+    "unidad": "COP",
+    "vigenciadesde": "2025-11-13",
+    "vigenciahasta": "2025-11-13"
+  },
+  {
+    "valor": 3719.6,
+    "unidad": "COP",
+    "vigenciadesde": "2025-11-14",
+    "vigenciahasta": "2025-11-14"
+  },
+  {
+    "valor": 3764.77,
+    "unidad": "COP",
+    "vigenciadesde": "2025-11-15",
+    "vigenciahasta": "2025-11-18"
+  },
+  {
+    "valor": 3737.55,
+    "unidad": "COP",
+    "vigenciadesde": "2025-11-19",
+    "vigenciahasta": "2025-11-19"
+  },
+  {
+    "valor": 3716.73,
+    "unidad": "COP",
+    "vigenciadesde": "2025-11-20",
+    "vigenciahasta": "2025-11-20"
+  },
+  {
+    "valor": 3741.27,
+    "unidad": "COP",
+    "vigenciadesde": "2025-11-21",
+    "vigenciahasta": "2025-11-21"
+  },
+  {
+    "valor": 3808.77,
+    "unidad": "COP",
+    "vigenciadesde": "2025-11-22",
+    "vigenciahasta": "2025-11-24"
+  },
+  {
+    "valor": 3804.09,
+    "unidad": "COP",
+    "vigenciadesde": "2025-11-25",
+    "vigenciahasta": "2025-11-25"
+  },
+  {
+    "valor": 3806.16,
+    "unidad": "COP",
+    "vigenciadesde": "2025-11-26",
+    "vigenciahasta": "2025-11-26"
+  },
+  {
+    "valor": 3773.6,
+    "unidad": "COP",
+    "vigenciadesde": "2025-11-27",
+    "vigenciahasta": "2025-11-28"
+  },
+  {
+    "valor": 3744.43,
+    "unidad": "COP",
+    "vigenciadesde": "2025-11-29",
+    "vigenciahasta": "2025-12-01"
+  },
+  {
+    "valor": 3784.43,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-02",
+    "vigenciahasta": "2025-12-02"
+  },
+  {
+    "valor": 3817.66,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-03",
+    "vigenciahasta": "2025-12-03"
+  },
+  {
+    "valor": 3780.8,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-04",
+    "vigenciahasta": "2025-12-04"
+  },
+  {
+    "valor": 3757.92,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-05",
+    "vigenciahasta": "2025-12-05"
+  },
+  {
+    "valor": 3830.02,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-06",
+    "vigenciahasta": "2025-12-09"
+  },
+  {
+    "valor": 3861.34,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-10",
+    "vigenciahasta": "2025-12-10"
+  },
+  {
+    "valor": 3854.28,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-11",
+    "vigenciahasta": "2025-12-11"
+  },
+  {
+    "valor": 3810.99,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-12",
+    "vigenciahasta": "2025-12-12"
+  },
+  {
+    "valor": 3788.53,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-13",
+    "vigenciahasta": "2025-12-15"
+  },
+  {
+    "valor": 3817.59,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-16",
+    "vigenciahasta": "2025-12-16"
+  },
+  {
+    "valor": 3847.1,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-17",
+    "vigenciahasta": "2025-12-17"
+  },
+  {
+    "valor": 3866.77,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-18",
+    "vigenciahasta": "2025-12-18"
+  },
+  {
+    "valor": 3874.71,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-19",
+    "vigenciahasta": "2025-12-19"
+  },
+  {
+    "valor": 3817.93,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-20",
+    "vigenciahasta": "2025-12-22"
+  },
+  {
+    "valor": 3792.59,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-23",
+    "vigenciahasta": "2025-12-23"
+  },
+  {
+    "valor": 3759.48,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-24",
+    "vigenciahasta": "2025-12-24"
+  },
+  {
+    "valor": 3706.94,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-25",
+    "vigenciahasta": "2025-12-26"
+  },
+  {
+    "valor": 3716.05,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-27",
+    "vigenciahasta": "2025-12-29"
+  },
+  {
+    "valor": 3706.97,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-30",
+    "vigenciahasta": "2025-12-30"
+  },
+  {
+    "valor": 3757.08,
+    "unidad": "COP",
+    "vigenciadesde": "2025-12-31",
+    "vigenciahasta": "2026-01-02"
+  },
+  {
+    "valor": 3790.77,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-03",
+    "vigenciahasta": "2026-01-05"
+  },
+  {
+    "valor": 3770.03,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-06",
+    "vigenciahasta": "2026-01-06"
+  },
+  {
+    "valor": 3730.26,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-07",
+    "vigenciahasta": "2026-01-07"
+  },
+  {
+    "valor": 3748.83,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-08",
+    "vigenciahasta": "2026-01-08"
+  },
+  {
+    "valor": 3734.67,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-09",
+    "vigenciahasta": "2026-01-09"
+  },
+  {
+    "valor": 3717.09,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-10",
+    "vigenciahasta": "2026-01-13"
+  },
+  {
+    "valor": 3663.24,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-14",
+    "vigenciahasta": "2026-01-14"
+  },
+  {
+    "valor": 3655.16,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-15",
+    "vigenciahasta": "2026-01-15"
+  },
+  {
+    "valor": 3687.32,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-16",
+    "vigenciahasta": "2026-01-16"
+  },
+  {
+    "valor": 3700.05,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-17",
+    "vigenciahasta": "2026-01-20"
+  },
+  {
+    "valor": 3682.97,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-21",
+    "vigenciahasta": "2026-01-21"
+  },
+  {
+    "valor": 3669.15,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-22",
+    "vigenciahasta": "2026-01-22"
+  },
+  {
+    "valor": 3630.33,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-23",
+    "vigenciahasta": "2026-01-23"
+  },
+  {
+    "valor": 3637.88,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-24",
+    "vigenciahasta": "2026-01-26"
+  },
+  {
+    "valor": 3676.02,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-27",
+    "vigenciahasta": "2026-01-27"
+  },
+  {
+    "valor": 3678.59,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-28",
+    "vigenciahasta": "2026-01-28"
+  },
+  {
+    "valor": 3665.97,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-29",
+    "vigenciahasta": "2026-01-29"
+  },
+  {
+    "valor": 3661.29,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-30",
+    "vigenciahasta": "2026-01-30"
+  },
+  {
+    "valor": 3670.47,
+    "unidad": "COP",
+    "vigenciadesde": "2026-01-31",
+    "vigenciahasta": "2026-02-02"
+  },
+  {
+    "valor": 3628.16,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-03",
+    "vigenciahasta": "2026-02-03"
+  },
+  {
+    "valor": 3622,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-04",
+    "vigenciahasta": "2026-02-04"
+  },
+  {
+    "valor": 3644.93,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-05",
+    "vigenciahasta": "2026-02-05"
+  },
+  {
+    "valor": 3691.75,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-06",
+    "vigenciahasta": "2026-02-06"
+  },
+  {
+    "valor": 3670.2,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-07",
+    "vigenciahasta": "2026-02-09"
+  },
+  {
+    "valor": 3651.9,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-10",
+    "vigenciahasta": "2026-02-10"
+  },
+  {
+    "valor": 3659.71,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-11",
+    "vigenciahasta": "2026-02-11"
+  },
+  {
+    "valor": 3671.01,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-12",
+    "vigenciahasta": "2026-02-12"
+  },
+  {
+    "valor": 3665.78,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-13",
+    "vigenciahasta": "2026-02-13"
+  },
+  {
+    "valor": 3652.89,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-14",
+    "vigenciahasta": "2026-02-17"
+  },
+  {
+    "valor": 3664.26,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-18",
+    "vigenciahasta": "2026-02-18"
+  },
+  {
+    "valor": 3669.21,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-19",
+    "vigenciahasta": "2026-02-19"
+  },
+  {
+    "valor": 3695.72,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-20",
+    "vigenciahasta": "2026-02-20"
+  },
+  {
+    "valor": 3691.34,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-21",
+    "vigenciahasta": "2026-02-23"
+  },
+  {
+    "valor": 3697.36,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-24",
+    "vigenciahasta": "2026-02-24"
+  },
+  {
+    "valor": 3703.28,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-25",
+    "vigenciahasta": "2026-02-25"
+  },
+  {
+    "valor": 3703.69,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-26",
+    "vigenciahasta": "2026-02-26"
+  },
+  {
+    "valor": 3745.78,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-27",
+    "vigenciahasta": "2026-02-27"
+  },
+  {
+    "valor": 3766.3,
+    "unidad": "COP",
+    "vigenciadesde": "2026-02-28",
+    "vigenciahasta": "2026-03-02"
+  },
+  {
+    "valor": 3768.73,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-03",
+    "vigenciahasta": "2026-03-03"
+  },
+  {
+    "valor": 3797.64,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-04",
+    "vigenciahasta": "2026-03-04"
+  },
+  {
+    "valor": 3751.41,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-05",
+    "vigenciahasta": "2026-03-05"
+  },
+  {
+    "valor": 3767.94,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-06",
+    "vigenciahasta": "2026-03-06"
+  },
+  {
+    "valor": 3795.55,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-07",
+    "vigenciahasta": "2026-03-09"
+  },
+  {
+    "valor": 3744.84,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-10",
+    "vigenciahasta": "2026-03-10"
+  },
+  {
+    "valor": 3710.5,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-11",
+    "vigenciahasta": "2026-03-11"
+  },
+  {
+    "valor": 3687.87,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-12",
+    "vigenciahasta": "2026-03-12"
+  },
+  {
+    "valor": 3700.46,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-13",
+    "vigenciahasta": "2026-03-13"
+  },
+  {
+    "valor": 3685.53,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-14",
+    "vigenciahasta": "2026-03-16"
+  },
+  {
+    "valor": 3691.9,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-17",
+    "vigenciahasta": "2026-03-17"
+  },
+  {
+    "valor": 3689.97,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-18",
+    "vigenciahasta": "2026-03-18"
+  },
+  {
+    "valor": 3704.17,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-19",
+    "vigenciahasta": "2026-03-19"
+  },
+  {
+    "valor": 3692.48,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-20",
+    "vigenciahasta": "2026-03-20"
+  },
+  {
+    "valor": 3704.87,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-21",
+    "vigenciahasta": "2026-03-24"
+  },
+  {
+    "valor": 3700.67,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-25",
+    "vigenciahasta": "2026-03-25"
+  },
+  {
+    "valor": 3688.46,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-26",
+    "vigenciahasta": "2026-03-26"
+  },
+  {
+    "valor": 3675.29,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-27",
+    "vigenciahasta": "2026-03-27"
+  },
+  {
+    "valor": 3668.89,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-28",
+    "vigenciahasta": "2026-03-30"
+  },
+  {
+    "valor": 3669.96,
+    "unidad": "COP",
+    "vigenciadesde": "2026-03-31",
+    "vigenciahasta": "2026-03-31"
+  },
+  {
+    "valor": 3660.1,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-01",
+    "vigenciahasta": "2026-04-01"
+  },
+  {
+    "valor": 3675.81,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-02",
+    "vigenciahasta": "2026-04-06"
+  },
+  {
+    "valor": 3664.41,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-07",
+    "vigenciahasta": "2026-04-07"
+  },
+  {
+    "valor": 3678.19,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-08",
+    "vigenciahasta": "2026-04-08"
+  },
+  {
+    "valor": 3640.63,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-09",
+    "vigenciahasta": "2026-04-09"
+  },
+  {
+    "valor": 3642.93,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-10",
+    "vigenciahasta": "2026-04-10"
+  },
+  {
+    "valor": 3631.49,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-11",
+    "vigenciahasta": "2026-04-13"
+  },
+  {
+    "valor": 3608.1,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-14",
+    "vigenciahasta": "2026-04-14"
+  },
+  {
+    "valor": 3578.82,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-15",
+    "vigenciahasta": "2026-04-15"
+  },
+  {
+    "valor": 3603.19,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-16",
+    "vigenciahasta": "2026-04-16"
+  },
+  {
+    "valor": 3615.1,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-17",
+    "vigenciahasta": "2026-04-17"
+  },
+  {
+    "valor": 3593.14,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-18",
+    "vigenciahasta": "2026-04-20"
+  },
+  {
+    "valor": 3573.3,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-21",
+    "vigenciahasta": "2026-04-21"
+  },
+  {
+    "valor": 3576.05,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-22",
+    "vigenciahasta": "2026-04-22"
+  },
+  {
+    "valor": 3568.88,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-23",
+    "vigenciahasta": "2026-04-23"
+  },
+  {
+    "valor": 3560.62,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-24",
+    "vigenciahasta": "2026-04-24"
+  },
+  {
+    "valor": 3551.17,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-25",
+    "vigenciahasta": "2026-04-27"
+  },
+  {
+    "valor": 3593.17,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-28",
+    "vigenciahasta": "2026-04-28"
+  },
+  {
+    "valor": 3633.76,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-29",
+    "vigenciahasta": "2026-04-29"
+  },
+  {
+    "valor": 3621.86,
+    "unidad": "COP",
+    "vigenciadesde": "2026-04-30",
+    "vigenciahasta": "2026-04-30"
+  },
+  {
+    "valor": 3637.51,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-01",
+    "vigenciahasta": "2026-05-04"
+  },
+  {
+    "valor": 3707.58,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-05",
+    "vigenciahasta": "2026-05-05"
+  },
+  {
+    "valor": 3723.33,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-06",
+    "vigenciahasta": "2026-05-06"
+  },
+  {
+    "valor": 3706.44,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-07",
+    "vigenciahasta": "2026-05-07"
+  },
+  {
+    "valor": 3729.27,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-08",
+    "vigenciahasta": "2026-05-08"
+  },
+  {
+    "valor": 3747.1,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-09",
+    "vigenciahasta": "2026-05-11"
+  },
+  {
+    "valor": 3759,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-12",
+    "vigenciahasta": "2026-05-12"
+  },
+  {
+    "valor": 3775.07,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-13",
+    "vigenciahasta": "2026-05-13"
+  },
+  {
+    "valor": 3794.91,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-14",
+    "vigenciahasta": "2026-05-14"
+  },
+  {
+    "valor": 3784.7,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-15",
+    "vigenciahasta": "2026-05-15"
+  },
+  {
+    "valor": 3796.78,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-16",
+    "vigenciahasta": "2026-05-19"
+  },
+  {
+    "valor": 3796.87,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-20",
+    "vigenciahasta": "2026-05-20"
+  },
+  {
+    "valor": 3730.49,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-21",
+    "vigenciahasta": "2026-05-21"
+  },
+  {
+    "valor": 3701.37,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-22",
+    "vigenciahasta": "2026-05-22"
+  },
+  {
+    "valor": 3667.06,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-23",
+    "vigenciahasta": "2026-05-26"
+  },
+  {
+    "valor": 3644.47,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-27",
+    "vigenciahasta": "2026-05-27"
+  },
+  {
+    "valor": 3631.57,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-28",
+    "vigenciahasta": "2026-05-28"
+  },
+  {
+    "valor": 3646.58,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-29",
+    "vigenciahasta": "2026-05-29"
+  },
+  {
+    "valor": 3678.15,
+    "unidad": "COP",
+    "vigenciadesde": "2026-05-30",
+    "vigenciahasta": "2026-06-01"
+  },
+  {
+    "valor": 3560.24,
+    "unidad": "COP",
+    "vigenciadesde": "2026-06-02",
+    "vigenciahasta": "2026-06-02"
+  },
+  {
+    "valor": 3562,
+    "unidad": "COP",
+    "vigenciadesde": "2026-06-03",
+    "vigenciahasta": "2026-06-03"
+  },
+  {
+    "valor": 3572.85,
+    "unidad": "COP",
+    "vigenciadesde": "2026-06-04",
+    "vigenciahasta": "2026-06-04"
+  },
+  {
+    "valor": 3565.32,
+    "unidad": "COP",
+    "vigenciadesde": "2026-06-05",
+    "vigenciahasta": "2026-06-05"
+  },
+  {
+    "valor": 3588.09,
+    "unidad": "COP",
+    "vigenciadesde": "2026-06-06",
+    "vigenciahasta": "2026-06-09"
+  },
+  {
+    "valor": 3581.46,
+    "unidad": "COP",
+    "vigenciadesde": "2026-06-10",
+    "vigenciahasta": "2026-06-10"
+  },
+  {
+    "valor": 3567.11,
+    "unidad": "COP",
+    "vigenciadesde": "2026-06-11",
+    "vigenciahasta": "2026-06-11"
+  },
+  {
+    "valor": 3513.54,
+    "unidad": "COP",
+    "vigenciadesde": "2026-06-12",
+    "vigenciahasta": "2026-06-12"
+  },
+  {
+    "valor": 3475.72,
+    "unidad": "COP",
+    "vigenciadesde": "2026-06-13",
+    "vigenciahasta": "2026-06-16"
+  },
+  {
+    "valor": 3427.07,
+    "unidad": "COP",
+    "vigenciadesde": "2026-06-17",
+    "vigenciahasta": "2026-06-17"
+  },
+  {
+    "valor": 3439.91,
+    "unidad": "COP",
+    "vigenciadesde": "2026-06-18",
+    "vigenciahasta": "2026-06-18"
+  },
+  {
+    "valor": 3459.53,
+    "unidad": "COP",
+    "vigenciadesde": "2026-06-19",
+    "vigenciahasta": "2026-06-22"
+  },
+  {
+    "valor": 3406.14,
+    "unidad": "COP",
+    "vigenciadesde": "2026-06-23",
+    "vigenciahasta": "2026-06-23"
+  },
+  {
+    "valor": 3425.95,
+    "unidad": "COP",
+    "vigenciadesde": "2026-06-24",
+    "vigenciahasta": "2026-06-24"
+  },
+  {
+    "valor": 3428.32,
+    "unidad": "COP",
+    "vigenciadesde": "2026-06-25",
+    "vigenciahasta": "2026-06-25"
+  },
+  {
+    "valor": 3433.71,
+    "unidad": "COP",
+    "vigenciadesde": "2026-06-26",
+    "vigenciahasta": "2026-06-26"
+  },
+  {
+    "valor": 3443.59,
+    "unidad": "COP",
+    "vigenciadesde": "2026-06-27",
+    "vigenciahasta": "2026-06-30"
+  },
+  {
+    "valor": 3440.83,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-01",
+    "vigenciahasta": "2026-07-01"
+  },
+  {
+    "valor": 3403.35,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-02",
+    "vigenciahasta": "2026-07-02"
+  },
+  {
+    "valor": 3357.82,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-03",
+    "vigenciahasta": "2026-07-03"
+  },
+  {
+    "valor": 3334.93,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-04",
+    "vigenciahasta": "2026-07-06"
+  },
+  {
+    "valor": 3350.68,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-07",
+    "vigenciahasta": "2026-07-07"
+  },
+  {
+    "valor": 3335.5,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-08",
+    "vigenciahasta": "2026-07-08"
+  },
+  {
+    "valor": 3339.65,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-09",
+    "vigenciahasta": "2026-07-09"
+  },
+  {
+    "valor": 3305.38,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-10",
+    "vigenciahasta": "2026-07-10"
+  },
+  {
+    "valor": 3248.87,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-11",
+    "vigenciahasta": "2026-07-14"
+  },
+  {
+    "valor": 3252.11,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-15",
+    "vigenciahasta": "2026-07-15"
+  },
+  {
+    "valor": 3233.91,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-16",
+    "vigenciahasta": "2026-07-16"
+  },
+  {
+    "valor": 3221.41,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-17",
+    "vigenciahasta": "2026-07-17"
+  },
+  {
+    "valor": 3262.58,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-18",
+    "vigenciahasta": "2026-07-21"
+  },
+  {
+    "valor": 3238.19,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-22",
+    "vigenciahasta": "2026-07-22"
+  },
+  {
+    "valor": 3206.86,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-23",
+    "vigenciahasta": "2026-07-23"
+  },
+  {
+    "valor": 3219.31,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-24",
+    "vigenciahasta": "2026-07-24"
+  },
+  {
+    "valor": 3210.56,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-25",
+    "vigenciahasta": "2026-07-27"
+  },
+  {
+    "valor": 3205.8,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-28",
+    "vigenciahasta": "2026-07-28"
+  },
+  {
+    "valor": 3205.87,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-29",
+    "vigenciahasta": "2026-07-29"
+  },
+  {
+    "valor": 3206.18,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-30",
+    "vigenciahasta": "2026-07-30"
+  },
+  {
+    "valor": 3132.42,
+    "unidad": "COP",
+    "vigenciadesde": "2026-07-31",
+    "vigenciahasta": "2026-07-31"
+  },
+  {
+    "valor": 3144.14,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-01",
+    "vigenciahasta": "2026-08-03"
+  },
+  {
+    "valor": 3230.44,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-04",
+    "vigenciahasta": "2026-08-04"
+  },
+  {
+    "valor": 3204.51,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-05",
+    "vigenciahasta": "2026-08-05"
+  },
+  {
+    "valor": 3179.4,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-06",
+    "vigenciahasta": "2026-08-06"
+  },
+  {
+    "valor": 3157.43,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-07",
+    "vigenciahasta": "2026-08-10"
+  },
+  {
+    "valor": 3125.47,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-11",
+    "vigenciahasta": "2026-08-11"
+  },
+  {
+    "valor": 3121.07,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-12",
+    "vigenciahasta": "2026-08-12"
+  },
+  {
+    "valor": 3123.28,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-13",
+    "vigenciahasta": "2026-08-13"
+  },
+  {
+    "valor": 3127.51,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-14",
+    "vigenciahasta": "2026-08-14"
+  },
+  {
+    "valor": 3128.65,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-15",
+    "vigenciahasta": "2026-08-18"
+  },
+  {
+    "valor": 3098.79,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-19",
+    "vigenciahasta": "2026-08-19"
+  },
+  {
+    "valor": 3053.48,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-20",
+    "vigenciahasta": "2026-08-20"
+  },
+  {
+    "valor": 3062.96,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-21",
+    "vigenciahasta": "2026-08-21"
+  },
+  {
+    "valor": 3048.12,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-22",
+    "vigenciahasta": "2026-08-24"
+  },
+  {
+    "valor": 3056.51,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-25",
+    "vigenciahasta": "2026-08-25"
+  },
+  {
+    "valor": 3081.67,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-26",
+    "vigenciahasta": "2026-08-26"
+  },
+  {
+    "valor": 3118.24,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-27",
+    "vigenciahasta": "2026-08-27"
+  },
+  {
+    "valor": 3144.28,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-28",
+    "vigenciahasta": "2026-08-28"
+  },
+  {
+    "valor": 3202.79,
+    "unidad": "COP",
+    "vigenciadesde": "2026-08-29",
+    "vigenciahasta": "2026-08-31"
+  },
+  {
+    "valor": 3213.97,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-01",
+    "vigenciahasta": "2026-09-01"
+  },
+  {
+    "valor": 3184,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-02",
+    "vigenciahasta": "2026-09-02"
+  },
+  {
+    "valor": 3140.55,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-03",
+    "vigenciahasta": "2026-09-03"
+  },
+  {
+    "valor": 3141.36,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-04",
+    "vigenciahasta": "2026-09-04"
+  },
+  {
+    "valor": 3126.08,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-05",
+    "vigenciahasta": "2026-09-08"
+  },
+  {
+    "valor": 3116.47,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-09",
+    "vigenciahasta": "2026-09-09"
+  },
+  {
+    "valor": 3099.48,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-10",
+    "vigenciahasta": "2026-09-10"
+  },
+  {
+    "valor": 3101,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-11",
+    "vigenciahasta": "2026-09-11"
+  },
+  {
+    "valor": 3072.27,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-12",
+    "vigenciahasta": "2026-09-14"
+  },
+  {
+    "valor": 3109.3,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-15",
+    "vigenciahasta": "2026-09-15"
+  },
+  {
+    "valor": 3100.45,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-16",
+    "vigenciahasta": "2026-09-16"
+  },
+  {
+    "valor": 3128.46,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-17",
+    "vigenciahasta": "2026-09-17"
+  },
+  {
+    "valor": 3151.73,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-18",
+    "vigenciahasta": "2026-09-18"
+  },
+  {
+    "valor": 3192.92,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-19",
+    "vigenciahasta": "2026-09-21"
+  },
+  {
+    "valor": 3192.53,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-22",
+    "vigenciahasta": "2026-09-22"
+  },
+  {
+    "valor": 3208.66,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-23",
+    "vigenciahasta": "2026-09-23"
+  },
+  {
+    "valor": 3264.39,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-24",
+    "vigenciahasta": "2026-09-24"
+  },
+  {
+    "valor": 3329.61,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-25",
+    "vigenciahasta": "2026-09-25"
+  },
+  {
+    "valor": 3306.86,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-26",
+    "vigenciahasta": "2026-09-28"
+  },
+  {
+    "valor": 3349.63,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-29",
+    "vigenciahasta": "2026-09-29"
+  },
+  {
+    "valor": 3341.23,
+    "unidad": "COP",
+    "vigenciadesde": "2026-09-30",
+    "vigenciahasta": "2026-09-30"
+  },
+  {
+    "valor": 3312.84,
+    "unidad": "COP",
+    "vigenciadesde": "2026-10-01",
+    "vigenciahasta": "2026-10-01"
+  },
+  {
+    "valor": 3307.73,
+    "unidad": "COP",
+    "vigenciadesde": "2026-10-02",
+    "vigenciahasta": "2026-10-02"
+  },
+  {
+    "valor": 3273.49,
+    "unidad": "COP",
+    "vigenciadesde": "2026-10-03",
+    "vigenciahasta": "2026-10-05"
+  },
+  {
+    "valor": 3209.78,
+    "unidad": "COP",
+    "vigenciadesde": "2026-10-06",
+    "vigenciahasta": "2026-10-06"
+  },
+  {
+    "valor": 3216.01,
+    "unidad": "COP",
+    "vigenciadesde": "2026-10-07",
+    "vigenciahasta": "2026-10-07"
+  },
+  {
+    "valor": 3238.88,
+    "unidad": "COP",
+    "vigenciadesde": "2026-10-08",
+    "vigenciahasta": "2026-10-08"
+  },
+  {
+    "valor": 3218.75,
+    "unidad": "COP",
+    "vigenciadesde": "2026-10-09",
+    "vigenciahasta": "2026-10-09"
+  },
+  {
+    "valor": 3194.44,
+    "unidad": "COP",
+    "vigenciadesde": "2026-10-10",
+    "vigenciahasta": "2026-10-13"
+  },
+  {
+    "valor": 3181.74,
+    "unidad": "COP",
+    "vigenciadesde": "2026-10-14",
+    "vigenciahasta": "2026-10-14"
+  },
+  {
+    "valor": 3197.65,
+    "unidad": "COP",
+    "vigenciadesde": "2026-10-15",
+    "vigenciahasta": "2026-10-15"
+  },
+  {
+    "valor": 3170.46,
+    "unidad": "COP",
+    "vigenciadesde": "2026-10-16",
+    "vigenciahasta": "2026-10-16"
+  },
+  {
+    "valor": 3174.67,
+    "unidad": "COP",
+    "vigenciadesde": "2026-10-17",
+    "vigenciahasta": "2026-10-19"
+  },
+  {
+    "valor": 3156.32,
+    "unidad": "COP",
+    "vigenciadesde": "2026-10-20",
+    "vigenciahasta": "2026-10-20"
+  },
+  {
+    "valor": 3163.76,
+    "unidad": "COP",
+    "vigenciadesde": "2026-10-21",
+    "vigenciahasta": "2026-10-21"
+  },
+  {
+    "valor": 3191.47,
+    "unidad": "COP",
+    "vigenciadesde": "2026-10-22",
+    "vigenciahasta": "2026-10-22"
+  }
+]

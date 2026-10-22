@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f8f78">
+  <meta name="description" content="Ejercicio completo de consumo de CoinGecko: top 50 criptomonedas, búsqueda, orden, conversión a COP, minigráficas SVG, tabla, modal y respaldo local.">
+  <title>Criptomonedas · Ejercicio 01 · Módulo A</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js" defer></script>
+  <script type="module" src="../assets/js/pages/criptomonedas.js"></script>
+</head>
+<body data-section="ejercicios">
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Módulo A, ir a la portada">
+        <span class="brand-mark" aria-hidden="true">{ }</span>
+        <span class="brand-text"><strong>Módulo A</strong><small>JS asíncrono y APIs</small></span>
+      </a>
+      <nav class="nav" id="menu-principal" aria-label="Navegación principal">
+        <a class="nav-link" data-nav="inicio" href="../index.html">Inicio</a>
+        <a class="nav-link" data-nav="ejemplos" href="../index.html#ruta">Ejemplos</a>
+        <a class="nav-link" data-nav="ejercicios" href="../index.html#ejercicios">Ejercicios</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--primary btn--sm btn--cta" href="02-datos-gov-co.html">Ir a TRM</a>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú de navegación">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div>
+          <nav aria-label="Ruta de navegación">
+            <ol class="breadcrumb">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../index.html#ejercicios">Ejercicios</a></li>
+              <li><span aria-current="page">Criptomonedas</span></li>
+            </ol>
+          </nav>
+          <span class="eyebrow" style="margin-top:1rem">Ejercicio 01 · CoinGecko</span>
+          <h1>Mercado cripto, en una sola pantalla</h1>
+          <p class="page-hero__lead">Top 50 por capitalización, variación de 24 horas y sparklines de siete días. Busca, ordena, cambia entre tarjetas y tabla, y convierte a pesos con una tasa real.</p>
+          <div class="page-hero__meta">
+            <span class="chip">50 monedas</span>
+            <span class="chip">USD · COP · EUR</span>
+            <span class="chip">Sparkline SVG</span>
+            <span class="chip chip--green">Caché 60 s</span>
+          </div>
+        </div>
+        <aside class="learn-card">
+          <h2>Qué resuelve</h2>
+          <ul class="learn-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Consulta paginada con parámetros de API</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Conversión USD → COP con tasa externa</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Búsqueda, orden y dos vistas</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Caché, respaldo y errores controlados</li>
+          </ul>
+          <p class="learn-card__foot">Respaldo · <code>data/criptomonedas.json</code></p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-label="Panel de criptomonedas">
+      <div class="container">
+        <div class="banner" data-banner hidden></div>
+
+        <div class="stat-grid" style="margin-bottom:1rem">
+          <div class="stat stat--accent">
+            <span class="stat__label">Capitalización total</span>
+            <span class="stat__value" data-stat-cap>—</span>
+            <span class="stat__hint" data-stat-cap-hint>Suma de las 50 monedas</span>
+          </div>
+          <div class="stat">
+            <span class="stat__label">Volumen 24 h</span>
+            <span class="stat__value" data-stat-volume>—</span>
+            <span class="stat__hint">Negociado en el último día</span>
+          </div>
+          <div class="stat">
+            <span class="stat__label">Dominancia BTC</span>
+            <span class="stat__value" data-stat-dominance>—</span>
+            <span class="stat__hint">Participación en la capitalización</span>
+          </div>
+          <div class="stat">
+            <span class="stat__label">Monedas cargadas</span>
+            <span class="stat__value" data-stat-count>—</span>
+            <span class="stat__hint" data-stat-origin>Origen pendiente</span>
+          </div>
+        </div>
+
+        <div class="crypto-toolbar">
+          <div class="search-field">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input class="input" type="search" placeholder="Buscar por nombre o símbolo…" aria-label="Buscar criptomoneda" data-search>
+          </div>
+
+          <select class="select crypto-toolbar__select" aria-label="Moneda de cotización" data-currency>
+            <option value="usd">USD · Dólar</option>
+            <option value="cop">COP · Peso colombiano</option>
+            <option value="eur">EUR · Euro</option>
+          </select>
+
+          <select class="select crypto-toolbar__select" aria-label="Ordenar resultados" data-order>
+            <option value="market_cap">Capitalización</option>
+            <option value="price">Precio</option>
+            <option value="gain">Mayor subida</option>
+            <option value="loss">Mayor caída</option>
+            <option value="rank">Ranking</option>
+          </select>
+
+          <div class="segmented" role="group" aria-label="Vista de resultados">
+            <button type="button" data-view="cards" aria-pressed="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+              Tarjetas
+            </button>
+            <button type="button" data-view="table" aria-pressed="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+              Tabla
+            </button>
+          </div>
+
+          <button class="btn btn--outline btn--sm" type="button" data-refresh>
+            Actualizar
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.6-6.4M21 3v6h-6"/></svg>
+          </button>
+        </div>
+
+        <div class="status-line" style="margin-top:.85rem">
+          <span class="status-light" data-status>Iniciando…</span>
+          <span class="chip" data-origin>Origen —</span>
+          <span class="chip" data-updated>Actualizado —</span>
+          <span class="rate-chip" data-rate hidden></span>
+        </div>
+
+        <div class="crypto-grid" data-cards aria-busy="true" aria-live="polite" style="margin-top:1rem"></div>
+
+        <div class="table-wrap" data-table-wrap hidden style="margin-top:1rem">
+          <table class="data-table">
+            <caption>Top 50 por capitalización · haz clic en «Ver» para abrir el detalle</caption>
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Moneda</th>
+                <th scope="col" class="num">Precio</th>
+                <th scope="col" class="num">24 h</th>
+                <th scope="col" class="num">Capitalización</th>
+                <th scope="col" class="num">Volumen 24 h</th>
+                <th scope="col">7 días</th>
+                <th scope="col" class="actions">Detalle</th>
+              </tr>
+            </thead>
+            <tbody data-table-body></tbody>
+          </table>
+        </div>
+
+        <div data-empty hidden style="margin-top:1rem"></div>
+      </div>
+    </section>
+
+    <section class="section section--soft" aria-labelledby="bitacora-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__copy">
+            <span class="eyebrow">Bitácora de red</span>
+            <h2 id="bitacora-title">Cada petición, a la vista</h2>
+            <p>La consola registra la URL consultada, el estado HTTP, el tiempo y si los datos vienen de la API, la caché o el respaldo.</p>
+          </div>
+        </div>
+
+        <div class="lesson-grid lesson-grid--wide-left">
+          <div class="console" data-console style="max-height:420px">
+            <div class="console__bar">
+              <span class="console__lights" aria-hidden="true"><span></span><span></span><span></span></span>
+              <span class="console__title">consola · coingecko</span>
+              <div class="console__tools">
+                <span class="console__count" data-console-count>0</span>
+                <button class="console__clear" type="button" data-console-clear>Limpiar</button>
+              </div>
+            </div>
+            <div class="console__log" data-console-log aria-live="polite" aria-label="Salida de la consola">
+              <div class="console-empty">Esperando la primera petición…</div>
+            </div>
+          </div>
+
+          <div class="lesson-stack">
+            <div class="callout callout--warning">
+              <span class="callout__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
+              </span>
+              <div class="callout__body">
+                <strong>CoinGecko ya no acepta <code>cop</code></strong>
+                <p>La consulta se hace en USD y el valor se multiplica por la tasa de <code>open.er-api.com</code>. La tasa usada aparece en la cabecera y en cada modal.</p>
+              </div>
+            </div>
+            <div class="callout callout--info">
+              <span class="callout__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+              </span>
+              <div class="callout__body">
+                <strong>Si la API falla, la clase continúa</strong>
+                <p>Tras un error de red, cuota o CORS se carga <code>data/criptomonedas.json</code>, se avisa en pantalla y se fuerza USD para evitar mezclar tasas.</p>
+              </div>
+            </div>
+            <div class="callout callout--success">
+              <span class="callout__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
+              </span>
+              <div class="callout__body">
+                <strong>Caché de 60 segundos</strong>
+                <p>Cambiar el orden o el buscador no genera peticiones. Solo el botón «Actualizar» o el cambio de moneda fuerzan una consulta nueva.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="construccion-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__copy">
+            <span class="eyebrow">Cómo se construyó</span>
+            <h2 id="construccion-title">Parámetros, conversión y dibujo</h2>
+            <p>No hay librerías de gráficas: la sparkline es un <code>path</code> SVG construido con los precios de siete días.</p>
+          </div>
+        </div>
+
+        <div class="lesson-grid">
+          <div class="stack">
+            <div class="code-window">
+              <div class="code-bar">
+                <span class="code-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="code-title"><strong>coingecko.js</strong> · consulta de mercados</span>
+                <button class="copy-btn" type="button">Copiar</button>
+              </div>
+              <div class="code-body">
+                <pre><code class="language-js">const url = new URL("https://api.coingecko.com/api/v3/coins/markets");
+
+url.searchParams.set("vs_currency", "usd");
+url.searchParams.set("order", "market_cap_desc");
+url.searchParams.set("per_page", "50");
+url.searchParams.set("page", "1");
+url.searchParams.set("sparkline", "true");
+url.searchParams.set("price_change_percentage", "24h");
+
+const { data } = await requestJSON(url, { timeout: 20000 });</code></pre>
+              </div>
+            </div>
+
+            <div class="code-window">
+              <div class="code-bar">
+                <span class="code-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="code-title"><strong>sparkline.js</strong> · 46 puntos, área y línea</span>
+                <button class="copy-btn" type="button">Copiar</button>
+              </div>
+              <div class="code-body">
+                <pre><code class="language-js">function sparkline(precios, tendencia) {
+  const puntos = downsample(precios, 46);
+  const min = Math.min(...puntos);
+  const max = Math.max(...puntos);
+  const rango = max - min || 1;
+
+  const coords = puntos.map((valor, i) => [
+    (i / (puntos.length - 1)) * 300,
+    46 - ((valor - min) / rango) * 40,
+  ]);
+
+  const linea = coords.map(([x, y]) => `${x},${y}`).join(" L");
+  const area = `M${linea} L300,46 L0,46 Z`;
+
+  return { linea, area, color: tendencia >= 0 ? "#0f8f78" : "#d64545" };
+}</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="lesson-stack">
+            <div class="card card--pad">
+              <h3>Decisiones clave</h3>
+              <ul class="lesson-list" style="margin-top:1rem">
+                <li><div><strong>Token de carga</strong>Cada solicitud incrementa un contador; las respuestas viejas se descartan.</div></li>
+                <li><div><strong>Caché por moneda</strong>La clave es <code>usd</code> o <code>eur</code>; COP reutiliza USD y añade la tasa.</div></li>
+                <li><div><strong>Respaldo coherente</strong>Si se usa el JSON local, se fuerza USD y se avisa con un banner.</div></li>
+                <li><div><strong>Escapado</strong>Todo dato de API se inserta con <code>textContent</code> o nodos, nunca con HTML crudo.</div></li>
+              </ul>
+            </div>
+            <details class="disclosure">
+              <summary>¿Por qué convertir COP y no pedirlo a CoinGecko?</summary>
+              <div class="disclosure__body">
+                <p>Porque el endpoint de mercados ya no admite <code>cop</code> como <code>vs_currency</code>. Se consulta en USD, se obtiene una tasa de cambio independiente y se multiplica en el cliente. Es una decisión documentada, no un parche invisible.</p>
+              </div>
+            </details>
+            <details class="disclosure">
+              <summary>¿Cómo se maneja una imagen rota?</summary>
+              <div class="disclosure__body">
+                <p>El <code>img</code> del logo escucha el evento <code>error</code> y se reemplaza por un círculo con las iniciales del símbolo. La demo nunca muestra el icono de imagen rota.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <nav class="pager" aria-label="Navegación entre ejercicios">
+          <a class="pager__link" href="../ejemplos/06-paises.html">
+            <span>Anterior</span>
+            <strong>← Países con REST Countries</strong>
+          </a>
+          <a class="pager__link pager__link--next" href="02-datos-gov-co.html">
+            <span>Siguiente ejercicio</span>
+            <strong>TRM · datos.gov.co →</strong>
+          </a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="../index.html" aria-label="Módulo A, ir a la portada">
+            <span class="brand-mark" aria-hidden="true">{ }</span>
+            <span class="brand-text"><strong>Módulo A</strong><small>JS asíncrono y APIs</small></span>
+          </a>
+          <p class="footer-about">Material didáctico de Procesamiento de datos · SENA ADSO. HTML, CSS y JavaScript vanilla, sin dependencias.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Ejemplos</h3>
+          <ul>
+            <li><a href="../ejemplos/01-asincronia.html">01 · Asincronía</a></li>
+            <li><a href="../ejemplos/02-xhr.html">02 · XMLHttpRequest</a></li>
+            <li><a href="../ejemplos/03-promesas.html">03 · Promesas</a></li>
+            <li><a href="../ejemplos/04-fetch.html">04 · Fetch API</a></li>
+            <li><a href="../ejemplos/05-post-formdata.html">05 · POST FormData</a></li>
+            <li><a href="../ejemplos/06-paises.html">06 · Países</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Ejercicios</h3>
+          <ul>
+            <li><a href="01-criptomonedas.html">Criptomonedas</a></li>
+            <li><a href="02-datos-gov-co.html">TRM · datos.gov.co</a></li>
+            <li><a href="../index.html#ejecutar">Cómo ejecutar</a></li>
+            <li><a href="../README.md">README</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="https://www.coingecko.com/es/api">CoinGecko API</a></li>
+            <li><a href="https://open.er-api.com/">open.er-api.com</a></li>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/SVG">MDN · SVG</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Módulo A · Procesamiento de datos. Licencia MIT.</p>
+        <div class="footer-bottom__links">
+          <a href="../README.md">Documentación</a>
+          <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">MDN JavaScript</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

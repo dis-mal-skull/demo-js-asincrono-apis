@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f8f78">
+  <meta name="description" content="Demo interactiva del event loop, setTimeout y callbacks en JavaScript. Observa el orden real de ejecución con marcas de tiempo.">
+  <title>Asincronía y callbacks · Módulo A</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js" defer></script>
+  <script type="module" src="../assets/js/pages/asincronia.js"></script>
+</head>
+<body data-section="ejemplos">
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Módulo A, ir a la portada">
+        <span class="brand-mark" aria-hidden="true">{ }</span>
+        <span class="brand-text"><strong>Módulo A</strong><small>JS asíncrono y APIs</small></span>
+      </a>
+      <nav class="nav" id="menu-principal" aria-label="Navegación principal">
+        <a class="nav-link" data-nav="inicio" href="../index.html">Inicio</a>
+        <a class="nav-link" data-nav="ejemplos" href="../index.html#ruta">Ejemplos</a>
+        <a class="nav-link" data-nav="ejercicios" href="../index.html#ejercicios">Ejercicios</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--primary btn--sm btn--cta" href="../ejercicios/01-criptomonedas.html">Abrir ejercicio</a>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú de navegación">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div>
+          <nav aria-label="Ruta de navegación">
+            <ol class="breadcrumb">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../index.html#ruta">Ejemplos</a></li>
+              <li><span aria-current="page">Asincronía</span></li>
+            </ol>
+          </nav>
+          <span class="eyebrow" style="margin-top:1rem">Ejemplo 01 · Fundamentos</span>
+          <h1>El orden de las cosas</h1>
+          <p class="page-hero__lead">JavaScript ejecuta una tarea a la vez, pero no espera sentado. Descubre cómo el event loop reparte el trabajo y por qué el orden real casi nunca es el que escribiste.</p>
+          <div class="page-hero__meta">
+            <span class="chip">setTimeout</span>
+            <span class="chip">callbacks</span>
+            <span class="chip">event loop</span>
+            <span class="chip chip--green">3 demos</span>
+          </div>
+        </div>
+        <aside class="learn-card">
+          <h2>Vas a aprender</h2>
+          <ul class="learn-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Diferenciar código síncrono y asíncrono</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Leer el orden real con marcas de tiempo</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Encadenar callbacks con estado</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Reconocer el callback hell</li>
+          </ul>
+          <p class="learn-card__foot">Duración estimada · 15 minutos</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-label="Laboratorio de asincronía">
+      <div class="container">
+        <div class="demo-grid">
+          <div class="panel">
+            <div class="panel__head">
+              <div>
+                <h2>Laboratorio en vivo</h2>
+                <p>Elige un escenario y ejecútalo. La línea de tiempo se construye con el orden real.</p>
+              </div>
+              <span class="badge badge--green"><span class="badge__dot"></span> Interactivo</span>
+            </div>
+            <div class="demo-stage">
+              <div class="segmented" role="group" aria-label="Escenario de la demo">
+                <button type="button" data-escenario="orden" aria-pressed="true">1 · Orden</button>
+                <button type="button" data-escenario="cadena" aria-pressed="false">2 · Callback</button>
+                <button type="button" data-escenario="hell" aria-pressed="false">3 · Callback hell</button>
+              </div>
+
+              <div class="status-line" style="margin-top:1rem">
+                <span class="status-light" data-status>Listo para ejecutar</span>
+                <span class="chip" data-escenario-nombre>Orden síncrono vs. asíncrono</span>
+              </div>
+
+              <div class="flow" data-flow hidden aria-label="Flujo de callbacks">
+                <span class="flow__node" data-flow-node="usuario">Usuario</span>
+                <span class="flow__arrow" aria-hidden="true">→</span>
+                <span class="flow__node" data-flow-node="publicaciones">Publicaciones</span>
+                <span class="flow__arrow" aria-hidden="true">→</span>
+                <span class="flow__node" data-flow-node="comentarios">Comentarios</span>
+              </div>
+
+              <ul class="timeline" data-timeline>
+                <li class="timeline__empty">La línea de tiempo aparecerá aquí al ejecutar la demo.</li>
+              </ul>
+
+              <div class="code-pyramid" data-pyramid hidden>fakeGetUser(usuario =&gt; {
+  fakeGetPosts(usuario.id, publicaciones =&gt; {
+    fakeGetComments(publicaciones[0].id, comentarios =&gt; {
+      // una capa más…
+    });
+  });
+});</div>
+
+              <div class="callout callout--info" style="margin-top:1rem">
+                <span class="callout__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+                </span>
+                <div class="callout__body">
+                  <strong>Qué observar</strong>
+                  <p data-nota>El <code>setTimeout</code> de 0 ms no se ejecuta de inmediato: entra a la cola de macrotareas y espera a que la pila y las microtareas terminen.</p>
+                </div>
+              </div>
+
+              <div class="demo-stage__actions">
+                <button class="btn btn--primary" type="button" data-run>
+                  Ejecutar demo
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 4 13 8-13 8V4Z"/></svg>
+                </button>
+                <button class="btn btn--ghost btn--sm" type="button" data-reset>Reiniciar</button>
+                <span class="demo-stage__hint">La consola de la derecha espeja cada paso.</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="demo-grid__aside">
+            <div class="console" data-console>
+              <div class="console__bar">
+                <span class="console__lights" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="console__title">consola · asincronía</span>
+                <div class="console__tools">
+                  <span class="console__count" data-console-count>0</span>
+                  <button class="console__clear" type="button" data-console-clear>Limpiar</button>
+                </div>
+              </div>
+              <div class="console__log" data-console-log aria-live="polite" aria-label="Salida de la consola">
+                <div class="console-empty">Ejecuta la demo para ver los mensajes con su hora.</div>
+              </div>
+            </div>
+            <div class="callout callout--warning">
+              <span class="callout__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
+              </span>
+              <div class="callout__body">
+                <strong>No confundas programar con ejecutar</strong>
+                <p><code>setTimeout(fn, 0)</code> no significa “ahora mismo”. Significa “lo antes posible, cuando la pila esté libre”.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" aria-labelledby="teoria-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__copy">
+            <span class="eyebrow">La teoría detrás de la demo</span>
+            <h2 id="teoria-title">Una pila, dos colas y un bucle</h2>
+            <p>El motor de JavaScript ejecuta una función a la vez. Las tareas asíncronas no interrumpen: se encolan y esperan su turno.</p>
+          </div>
+        </div>
+
+        <div class="lesson-grid">
+          <div class="lesson-stack">
+            <div class="code-window">
+              <div class="code-bar">
+                <span class="code-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="code-title"><strong>orden.js</strong> · setTimeout</span>
+                <button class="copy-btn" type="button">Copiar</button>
+              </div>
+              <div class="code-body">
+                <pre><code class="language-js">console.log("1 · síncrono");
+
+setTimeout(() => {
+  console.log("4 · macrotarea");
+}, 0);
+
+Promise.resolve().then(() => {
+  console.log("3 · microtarea");
+});
+
+console.log("2 · síncrono");
+
+// Orden real: 1 → 2 → 3 → 4</code></pre>
+              </div>
+            </div>
+
+            <div class="code-window">
+              <div class="code-bar">
+                <span class="code-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="code-title"><strong>callbacks.js</strong> · datos encadenados</span>
+                <button class="copy-btn" type="button">Copiar</button>
+              </div>
+              <div class="code-body">
+                <pre><code class="language-js">function fakeGetUser(callback) {
+  setTimeout(() => {
+    callback({ id: 1, nombre: "Ana" });
+  }, 400);
+}
+
+function fakeGetPosts(usuarioId, callback) {
+  setTimeout(() => {
+    callback([{ id: 10, titulo: "Event loop" }]);
+  }, 500);
+}
+
+fakeGetUser((usuario) => {
+  console.log("Usuario:", usuario.nombre);
+
+  fakeGetPosts(usuario.id, (publicaciones) => {
+    console.log("Publicaciones:", publicaciones.length);
+  });
+});</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="lesson-stack">
+            <div class="card card--pad">
+              <h3>El recorrido de una tarea</h3>
+              <ol class="lesson-list" style="margin-top:1rem">
+                <li><div><strong>Pila de llamadas</strong>Ejecuta el código síncrono, función por función.</div></li>
+                <li><div><strong>Microtareas</strong>Promesas y <code>queueMicrotask</code>. Se vacían antes de pintar.</div></li>
+                <li><div><strong>Macrotareas</strong><code>setTimeout</code>, eventos y peticiones. Una por vuelta del bucle.</div></li>
+                <li><div><strong>Render</strong>El navegador pinta cuando las colas prioritarias están vacías.</div></li>
+              </ol>
+            </div>
+
+            <div class="callout callout--success">
+              <span class="callout__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
+              </span>
+              <div class="callout__body">
+                <strong>Regla mental</strong>
+                <p>Todo lo síncrono termina primero. Después las microtareas. Después, una macrotarea. Y el ciclo vuelve a empezar.</p>
+              </div>
+            </div>
+
+            <details class="disclosure">
+              <summary>¿Por qué el callback hell es un problema?</summary>
+              <div class="disclosure__body">
+                <p>Porque cada paso vive dentro del anterior: el código crece hacia la derecha, el manejo de errores se repite y reutilizar una etapa se vuelve difícil. Las promesas y <code>async/await</code> resuelven justamente esa legibilidad.</p>
+              </div>
+            </details>
+            <details class="disclosure">
+              <summary>¿setTimeout(0) es instantáneo?</summary>
+              <div class="disclosure__body">
+                <p>No. El navegador aplica un mínimo de temporización y, sobre todo, espera a que la pila de llamadas esté libre. En la práctica puede tardar 1 ms o más.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <nav class="pager" aria-label="Navegación entre ejemplos">
+          <a class="pager__link" href="../index.html">
+            <span>Anterior</span>
+            <strong>← Portada del módulo</strong>
+          </a>
+          <a class="pager__link pager__link--next" href="02-xhr.html">
+            <span>Siguiente</span>
+            <strong>XMLHttpRequest →</strong>
+          </a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="../index.html" aria-label="Módulo A, ir a la portada">
+            <span class="brand-mark" aria-hidden="true">{ }</span>
+            <span class="brand-text"><strong>Módulo A</strong><small>JS asíncrono y APIs</small></span>
+          </a>
+          <p class="footer-about">Material didáctico de Procesamiento de datos · SENA ADSO. HTML, CSS y JavaScript vanilla, sin dependencias.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Ejemplos</h3>
+          <ul>
+            <li><a href="01-asincronia.html">01 · Asincronía</a></li>
+            <li><a href="02-xhr.html">02 · XMLHttpRequest</a></li>
+            <li><a href="03-promesas.html">03 · Promesas</a></li>
+            <li><a href="04-fetch.html">04 · Fetch API</a></li>
+            <li><a href="05-post-formdata.html">05 · POST FormData</a></li>
+            <li><a href="06-paises.html">06 · Países</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Ejercicios</h3>
+          <ul>
+            <li><a href="../ejercicios/01-criptomonedas.html">Criptomonedas</a></li>
+            <li><a href="../ejercicios/02-datos-gov-co.html">TRM · datos.gov.co</a></li>
+            <li><a href="../index.html#ejecutar">Cómo ejecutar</a></li>
+            <li><a href="../README.md">README</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Event_loop">MDN · Event loop</a></li>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/API/setTimeout">MDN · setTimeout</a></li>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Using_promises">MDN · Promesas</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Módulo A · Procesamiento de datos. Licencia MIT.</p>
+        <div class="footer-bottom__links">
+          <a href="../README.md">Documentación</a>
+          <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">MDN JavaScript</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

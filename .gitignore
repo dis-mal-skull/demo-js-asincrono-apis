@@ -1,0 +1,13 @@
+# Dependencias (el proyecto no usa ninguna)
+node_modules/
+package-lock.json
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporales
+*.log
+*.tmp

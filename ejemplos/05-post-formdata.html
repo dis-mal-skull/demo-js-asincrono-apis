@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f8f78">
+  <meta name="description" content="Envío de formularios con fetch y FormData: validación, POST real a test.php, estado, tiempo, content-type y respuesta en texto plano.">
+  <title>POST con FormData · Módulo A</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js" defer></script>
+  <script type="module" src="../assets/js/pages/post-formdata.js"></script>
+</head>
+<body data-section="ejemplos">
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Módulo A, ir a la portada">
+        <span class="brand-mark" aria-hidden="true">{ }</span>
+        <span class="brand-text"><strong>Módulo A</strong><small>JS asíncrono y APIs</small></span>
+      </a>
+      <nav class="nav" id="menu-principal" aria-label="Navegación principal">
+        <a class="nav-link" data-nav="inicio" href="../index.html">Inicio</a>
+        <a class="nav-link" data-nav="ejemplos" href="../index.html#ruta">Ejemplos</a>
+        <a class="nav-link" data-nav="ejercicios" href="../index.html#ejercicios">Ejercicios</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--primary btn--sm btn--cta" href="../ejercicios/01-criptomonedas.html">Abrir ejercicio</a>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú de navegación">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div>
+          <nav aria-label="Ruta de navegación">
+            <ol class="breadcrumb">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../index.html#ruta">Ejemplos</a></li>
+              <li><span aria-current="page">POST con FormData</span></li>
+            </ol>
+          </nav>
+          <span class="eyebrow" style="margin-top:1rem">Ejemplo 05 · HTTP + Node</span>
+          <h1>Enviar datos también es conversación</h1>
+          <p class="page-hero__lead">Un <code>GET</code> pide; un <code>POST</code> envía. Completa el formulario y el servidor local responderá con el resumen de lo recibido, sin base de datos y sin frameworks.</p>
+          <div class="page-hero__meta">
+            <span class="chip">fetch POST</span>
+            <span class="chip">FormData</span>
+            <span class="chip">validación</span>
+            <span class="chip chip--green">text/plain</span>
+          </div>
+        </div>
+        <aside class="learn-card">
+          <h2>Vas a aprender</h2>
+          <ul class="learn-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Enviar un formulario con <code>FormData</code></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Validar antes de tocar la red</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Leer una respuesta en texto plano</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Comparar Node y PHP con el mismo contrato</li>
+          </ul>
+          <p class="learn-card__foot">Duración estimada · 12 minutos</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-label="Laboratorio POST">
+      <div class="container">
+        <div class="demo-grid">
+          <div class="panel">
+            <div class="panel__head">
+              <div>
+                <h2>Formulario de contacto</h2>
+                <p>El destino es <code>../test.php</code>. El servidor limpia etiquetas y limita cada campo a 400 caracteres.</p>
+              </div>
+              <span class="badge badge--green"><span class="badge__dot"></span> POST real</span>
+            </div>
+            <div class="demo-stage">
+              <form data-form novalidate>
+                <div class="form-grid">
+                  <div class="field">
+                    <label class="label" for="nombre">Nombre completo</label>
+                    <input class="input" id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Ana Gómez" required>
+                    <p class="error-text" data-error="nombre" hidden></p>
+                  </div>
+                  <div class="field">
+                    <label class="label" for="correo">Correo electrónico</label>
+                    <input class="input" id="correo" name="correo" type="email" autocomplete="email" placeholder="ana@example.com" required>
+                    <p class="error-text" data-error="correo" hidden></p>
+                  </div>
+                  <div class="field field--full">
+                    <label class="label" for="mensaje">Mensaje</label>
+                    <textarea class="textarea" id="mensaje" name="mensaje" rows="4" maxlength="400" placeholder="Cuéntanos qué aprendiste del event loop…" required></textarea>
+                    <div style="display:flex;justify-content:space-between;gap:1rem">
+                      <p class="error-text" data-error="mensaje" hidden></p>
+                      <span class="helper" data-counter>0 / 400</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="btn-row" style="margin-top:1rem">
+                  <button class="btn btn--primary" type="submit" data-submit>
+                    Enviar al servidor
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z"/></svg>
+                  </button>
+                  <button class="btn btn--outline btn--sm" type="button" data-ejemplo>Rellenar ejemplo</button>
+                  <button class="btn btn--ghost btn--sm" type="reset" data-reset>Limpiar</button>
+                </div>
+              </form>
+
+              <div class="status-line" style="margin-top:1.25rem">
+                <span class="status-light" data-status>Listo para enviar</span>
+                <span class="chip" data-http>HTTP —</span>
+                <span class="chip" data-time>Tiempo —</span>
+                <span class="chip" data-type>Content-Type —</span>
+              </div>
+
+              <pre class="request-output" data-output aria-live="polite">La respuesta del servidor aparecerá aquí.</pre>
+            </div>
+          </div>
+
+          <aside class="demo-grid__aside">
+            <div class="console" data-console>
+              <div class="console__bar">
+                <span class="console__lights" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="console__title">consola · post</span>
+                <div class="console__tools">
+                  <span class="console__count" data-console-count>0</span>
+                  <button class="console__clear" type="button" data-console-clear>Limpiar</button>
+                </div>
+              </div>
+              <div class="console__log" data-console-log aria-live="polite" aria-label="Salida de la consola">
+                <div class="console-empty">Completa el formulario y envíalo con fetch.</div>
+              </div>
+            </div>
+            <div class="callout callout--info">
+              <span class="callout__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+              </span>
+              <div class="callout__body">
+                <strong>No escribas el Content-Type</strong>
+                <p>Al pasar un <code>FormData</code>, el navegador genera el <em>boundary</em> y la cabecera multipart. Si la fijas manualmente, el servidor no podrá separar los campos.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" aria-labelledby="teoria-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__copy">
+            <span class="eyebrow">El viaje completo</span>
+            <h2 id="teoria-title">Del formulario al texto de respuesta</h2>
+            <p>El navegador serializa, envía, espera y devuelve. El mismo endpoint funciona con Node y con PHP.</p>
+          </div>
+        </div>
+
+        <div class="lesson-grid">
+          <div class="code-window">
+            <div class="code-bar">
+              <span class="code-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+              <span class="code-title"><strong>post.js</strong> · fetch + FormData</span>
+              <button class="copy-btn" type="button">Copiar</button>
+            </div>
+            <div class="code-body">
+              <pre><code class="language-js">const formulario = document.querySelector("form");
+const datos = new FormData(formulario);
+
+const respuesta = await fetch("../test.php", {
+  method: "POST",
+  body: datos,
+});
+
+const texto = await respuesta.text();
+
+if (respuesta.ok) {
+  salida.textContent = texto;
+} else {
+  console.error("Error HTTP", respuesta.status);
+}</code></pre>
+            </div>
+          </div>
+
+          <div class="stack">
+            <div class="code-window">
+              <div class="code-bar">
+                <span class="code-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="code-title"><strong>respuesta.txt</strong> · contrato esperado</span>
+                <button class="copy-btn" type="button">Copiar</button>
+              </div>
+              <div class="code-body">
+                <pre><code class="language-text">======================================================
+        RESPUESTA DEL SERVIDOR
+======================================================
+Fecha:        2026-10-21 14:32:08
+Método:       POST
+Content-Type: multipart/form-data; boundary=…
+------------------------------------------------------
+DATOS DEL FORMULARIO
+Nombre:       Ana Gómez
+Correo:       ana@example.com
+Mensaje:      Quiero practicar fetch con FormData.
+------------------------------------------------------
+Fin de la respuesta. ¡El servidor está funcionando!</code></pre>
+              </div>
+            </div>
+
+            <div class="callout callout--success">
+              <span class="callout__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
+              </span>
+              <div class="callout__body">
+                <strong>La validación ocurre dos veces</strong>
+                <p>En el navegador, para dar respuesta inmediata; en el servidor, porque nunca se confía en el cliente. Aquí el servidor limpia etiquetas y recorta a 400 caracteres.</p>
+              </div>
+            </div>
+
+            <details class="disclosure">
+              <summary>¿Qué diferencia hay entre FormData y JSON?</summary>
+              <div class="disclosure__body">
+                <p><code>FormData</code> imita el envío clásico de un formulario y admite archivos sin conversión. JSON es más cómodo para APIs y estructuras anidadas, pero requiere <code>JSON.stringify</code> y el encabezado <code>Content-Type: application/json</code>.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <nav class="pager" aria-label="Navegación entre ejemplos">
+          <a class="pager__link" href="04-fetch.html">
+            <span>Anterior</span>
+            <strong>← Fetch API</strong>
+          </a>
+          <a class="pager__link pager__link--next" href="06-paises.html">
+            <span>Siguiente</span>
+            <strong>250 países →</strong>
+          </a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="../index.html" aria-label="Módulo A, ir a la portada">
+            <span class="brand-mark" aria-hidden="true">{ }</span>
+            <span class="brand-text"><strong>Módulo A</strong><small>JS asíncrono y APIs</small></span>
+          </a>
+          <p class="footer-about">Material didáctico de Procesamiento de datos · SENA ADSO. HTML, CSS y JavaScript vanilla, sin dependencias.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Ejemplos</h3>
+          <ul>
+            <li><a href="01-asincronia.html">01 · Asincronía</a></li>
+            <li><a href="02-xhr.html">02 · XMLHttpRequest</a></li>
+            <li><a href="03-promesas.html">03 · Promesas</a></li>
+            <li><a href="04-fetch.html">04 · Fetch API</a></li>
+            <li><a href="05-post-formdata.html">05 · POST FormData</a></li>
+            <li><a href="06-paises.html">06 · Países</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Ejercicios</h3>
+          <ul>
+            <li><a href="../ejercicios/01-criptomonedas.html">Criptomonedas</a></li>
+            <li><a href="../ejercicios/02-datos-gov-co.html">TRM · datos.gov.co</a></li>
+            <li><a href="../index.html#ejecutar">Cómo ejecutar</a></li>
+            <li><a href="../README.md">README</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/API/FormData">MDN · FormData</a></li>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Using_Fetch">MDN · Usar fetch</a></li>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/HTTP/Methods/POST">MDN · POST</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Módulo A · Procesamiento de datos. Licencia MIT.</p>
+        <div class="footer-bottom__links">
+          <a href="../README.md">Documentación</a>
+          <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">MDN JavaScript</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

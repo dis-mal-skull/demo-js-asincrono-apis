@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f8f78">
+  <meta name="description" content="Explorador de 250 países con datos locales en formato REST Countries v3.1: banderas, capital, población, área, monedas, idiomas y zonas horarias.">
+  <title>Países · Módulo A</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js" defer></script>
+  <script type="module" src="../assets/js/pages/paises.js"></script>
+</head>
+<body data-section="ejemplos">
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Módulo A, ir a la portada">
+        <span class="brand-mark" aria-hidden="true">{ }</span>
+        <span class="brand-text"><strong>Módulo A</strong><small>JS asíncrono y APIs</small></span>
+      </a>
+      <nav class="nav" id="menu-principal" aria-label="Navegación principal">
+        <a class="nav-link" data-nav="inicio" href="../index.html">Inicio</a>
+        <a class="nav-link" data-nav="ejemplos" href="../index.html#ruta">Ejemplos</a>
+        <a class="nav-link" data-nav="ejercicios" href="../index.html#ejercicios">Ejercicios</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--primary btn--sm btn--cta" href="../ejercicios/01-criptomonedas.html">Abrir ejercicio</a>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú de navegación">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div>
+          <nav aria-label="Ruta de navegación">
+            <ol class="breadcrumb">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../index.html#ruta">Ejemplos</a></li>
+              <li><span aria-current="page">Países</span></li>
+            </ol>
+          </nav>
+          <span class="eyebrow" style="margin-top:1rem">Ejemplo 06 · Proyecto guiado</span>
+          <h1>Un país a la vez</h1>
+          <p class="page-hero__lead">Explora 250 países con la estructura de REST Countries v3.1. Filtra por región, elige uno al azar y acumula consultas mientras descubres por qué la API original ya no responde.</p>
+          <div class="page-hero__meta">
+            <span class="chip">JSON local</span>
+            <span class="chip">Intl.NumberFormat</span>
+            <span class="chip">flagcdn</span>
+            <span class="chip chip--green">250 registros</span>
+          </div>
+        </div>
+        <aside class="learn-card">
+          <h2>Vas a aprender</h2>
+          <ul class="learn-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Cargar un JSON local con <code>fetch</code></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Modelar datos anidados de una API</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Formatear números y monedas en es-CO</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Manejar imágenes con respaldo visual</li>
+          </ul>
+          <p class="learn-card__foot">Duración estimada · 20 minutos</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-label="Explorador de países">
+      <div class="container">
+        <div class="demo-grid">
+          <div class="panel">
+            <div class="panel__head">
+              <div>
+                <h2>Explorador</h2>
+                <p>Datos servidos desde <code>../data/paises.json</code>.</p>
+              </div>
+              <span class="status-light" data-status>Cargando datos…</span>
+            </div>
+            <div class="demo-stage">
+              <div class="country-picker">
+                <div class="country-picker__row">
+                  <div class="field">
+                    <label class="label" for="pais">País</label>
+                    <select class="select" id="pais" data-select disabled>
+                      <option value="">Cargando países…</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label class="label" for="region">Región</label>
+                    <select class="select" id="region" data-region disabled>
+                      <option value="">Todas las regiones</option>
+                      <option value="Africa">África</option>
+                      <option value="Americas">América</option>
+                      <option value="Asia">Asia</option>
+                      <option value="Europe">Europa</option>
+                      <option value="Oceania">Oceanía</option>
+                      <option value="Antarctic">Antártida</option>
+                    </select>
+                  </div>
+                  <button class="btn btn--outline" type="button" data-random disabled>
+                    Aleatorio
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div data-detail style="margin-top:1.1rem">
+                <div class="empty-state country-detail-empty">
+                  <div class="empty-state__icon" aria-hidden="true">◎</div>
+                  <h3>Elige un país</h3>
+                  <p>Selecciona uno en la lista, filtra por región o pulsa «Aleatorio» para empezar.</p>
+                </div>
+              </div>
+
+              <div class="btn-row" style="margin-top:1rem">
+                <button class="btn btn--ghost btn--sm" type="button" data-clear>Limpiar tabla de consultas</button>
+                <span class="demo-stage__hint">La bandera usa flagcdn y cae al emoji si falla.</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="demo-grid__aside">
+            <div class="console" data-console>
+              <div class="console__bar">
+                <span class="console__lights" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="console__title">consola · países</span>
+                <div class="console__tools">
+                  <span class="console__count" data-console-count>0</span>
+                  <button class="console__clear" type="button" data-console-clear>Limpiar</button>
+                </div>
+              </div>
+              <div class="console__log" data-console-log aria-live="polite" aria-label="Salida de la consola">
+                <div class="console-empty">Cargando el snapshot de países…</div>
+              </div>
+            </div>
+            <div class="callout callout--warning">
+              <span class="callout__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
+              </span>
+              <div class="callout__body">
+                <strong>REST Countries v3.1 fue retirada</strong>
+                <p>El endpoint clásico responde con un aviso de deprecación. Este ejemplo conserva el snapshot y su forma para que puedas estudiar el consumo sin depender de la API.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="panel" style="margin-top:1.25rem">
+          <div class="panel__head">
+            <div>
+              <h3>Países consultados</h3>
+              <p>La tabla se acumula durante la sesión y evita duplicados.</p>
+            </div>
+            <span class="badge badge--neutral" data-count>0 países</span>
+          </div>
+          <div class="table-wrap" style="border:0;border-radius:0">
+            <table class="data-table">
+              <caption class="sr-only">Países consultados en esta sesión</caption>
+              <thead>
+                <tr>
+                  <th scope="col">País</th>
+                  <th scope="col">Región</th>
+                  <th scope="col" class="num">Población</th>
+                  <th scope="col" class="num">Área</th>
+                  <th scope="col">Código</th>
+                  <th scope="col">Consulta</th>
+                </tr>
+              </thead>
+              <tbody data-history>
+                <tr data-history-empty>
+                  <td colspan="6" class="muted">Aún no has consultado ningún país.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" aria-labelledby="teoria-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__copy">
+            <span class="eyebrow">El código original</span>
+            <h2 id="teoria-title">Así se consultaba la API</h2>
+            <p>Este bloque conserva el ejemplo del material. Hoy la versión v3.1 responde con un error de deprecación, por eso el proyecto incluye un respaldo local con la misma estructura.</p>
+          </div>
+        </div>
+
+        <div class="lesson-grid lesson-grid--wide-left">
+          <div class="code-window">
+            <div class="code-bar">
+              <span class="code-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+              <span class="code-title"><strong>rest-countries.js</strong> · referencia histórica (v3.1)</span>
+              <button class="copy-btn" type="button">Copiar</button>
+            </div>
+            <div class="code-body">
+              <pre><code class="language-js">// Endpoint histórico, hoy retirado:
+// https://restcountries.com/v3.1/all
+
+fetch("https://restcountries.com/v3.1/all")
+  .then((respuesta) => {
+    if (!respuesta.ok) throw new Error("Error HTTP");
+    return respuesta.json();
+  })
+  .then((paises) => {
+    const colombia = paises.find((pais) => pais.cca3 === "COL");
+    console.log(colombia.name.common);   // Colombia
+    console.log(colombia.capital[0]);    // Bogotá
+    console.log(colombia.currencies.COP); // peso colombiano
+  })
+  .catch((error) => console.error(error.message));</code></pre>
+            </div>
+          </div>
+
+          <div class="lesson-stack">
+            <div class="card card--pad">
+              <h3>La estructura que conservamos</h3>
+              <ul class="lesson-list" style="margin-top:1rem">
+                <li><div><strong><code>name.common</code></strong>Nombre visible del país.</div></li>
+                <li><div><strong><code>capital</code></strong>Arreglo: un país puede tener varias.</div></li>
+                <li><div><strong><code>currencies</code></strong>Objeto por código ISO: nombre y símbolo.</div></li>
+                <li><div><strong><code>languages</code></strong>Objeto de códigos ISO a nombres.</div></li>
+                <li><div><strong><code>timezones</code></strong>Arreglo de zonas horarias IANA.</div></li>
+              </ul>
+            </div>
+            <div class="callout callout--info">
+              <span class="callout__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+              </span>
+              <div class="callout__body">
+                <strong>Lección de resiliencia</strong>
+                <p>Una API puede cambiar o desaparecer. Un respaldo local con el mismo contrato mantiene la demo educativa funcionando y permite comparar respuestas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav class="pager" aria-label="Navegación entre ejemplos">
+          <a class="pager__link" href="05-post-formdata.html">
+            <span>Anterior</span>
+            <strong>← POST con FormData</strong>
+          </a>
+          <a class="pager__link pager__link--next" href="../ejercicios/01-criptomonedas.html">
+            <span>Siguiente</span>
+            <strong>Ejercicio · Criptomonedas →</strong>
+          </a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="../index.html" aria-label="Módulo A, ir a la portada">
+            <span class="brand-mark" aria-hidden="true">{ }</span>
+            <span class="brand-text"><strong>Módulo A</strong><small>JS asíncrono y APIs</small></span>
+          </a>
+          <p class="footer-about">Material didáctico de Procesamiento de datos · SENA ADSO. HTML, CSS y JavaScript vanilla, sin dependencias.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Ejemplos</h3>
+          <ul>
+            <li><a href="01-asincronia.html">01 · Asincronía</a></li>
+            <li><a href="02-xhr.html">02 · XMLHttpRequest</a></li>
+            <li><a href="03-promesas.html">03 · Promesas</a></li>
+            <li><a href="04-fetch.html">04 · Fetch API</a></li>
+            <li><a href="05-post-formdata.html">05 · POST FormData</a></li>
+            <li><a href="06-paises.html">06 · Países</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Ejercicios</h3>
+          <ul>
+            <li><a href="../ejercicios/01-criptomonedas.html">Criptomonedas</a></li>
+            <li><a href="../ejercicios/02-datos-gov-co.html">TRM · datos.gov.co</a></li>
+            <li><a href="../index.html#ejecutar">Cómo ejecutar</a></li>
+            <li><a href="../README.md">README</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="https://restcountries.com/">REST Countries</a></li>
+            <li><a href="https://flagcdn.com/">flagcdn</a></li>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat">MDN · Intl.NumberFormat</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Módulo A · Procesamiento de datos. Licencia MIT.</p>
+        <div class="footer-bottom__links">
+          <a href="../README.md">Documentación</a>
+          <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">MDN JavaScript</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

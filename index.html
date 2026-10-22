@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f8f78">
+  <meta name="description" content="Ruta de aprendizaje interactiva sobre JavaScript asíncrono, callbacks, promesas, fetch, FormData y consumo de APIs reales. Módulo A · SENA ADSO.">
+  <title>JavaScript asíncrono y APIs · Módulo A</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js" defer></script>
+  <script type="module" src="assets/js/pages/home.js"></script>
+</head>
+<body data-section="inicio">
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Módulo A, ir a la portada">
+        <span class="brand-mark" aria-hidden="true">{ }</span>
+        <span class="brand-text">
+          <strong>Módulo A</strong>
+          <small>JS asíncrono y APIs</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="menu-principal" aria-label="Navegación principal">
+        <a class="nav-link" data-nav="inicio" href="index.html">Inicio</a>
+        <a class="nav-link" data-nav="ejemplos" href="#ruta">Ejemplos</a>
+        <a class="nav-link" data-nav="ejercicios" href="#ejercicios">Ejercicios</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn--primary btn--sm btn--cta" href="ejercicios/01-criptomonedas.html">
+          Abrir ejercicio
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú de navegación">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <div class="hero__badge-row">
+            <span class="badge badge--green"><span class="badge__dot"></span> Módulo A · Procesamiento de datos</span>
+            <span class="badge badge--outline">SENA · ADSO</span>
+          </div>
+
+          <h1 id="hero-title">
+            JavaScript <span class="hero__title-em">asíncrono</span><br>
+            <span class="hero__line">y consumo de APIs</span>
+          </h1>
+
+          <p class="hero__lead">
+            Seis demos y dos ejercicios completos para entender qué pasa <strong>mientras el navegador espera</strong>:
+            callbacks, promesas, <code>fetch</code>, <code>FormData</code> y datos reales de criptomonedas y TRM.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#ruta">
+              Comenzar la ruta
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--outline btn--lg" href="#ejercicios">Ver ejercicios</a>
+          </div>
+
+          <div class="hero__meta">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+              Sin instalaciones
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+              JavaScript vanilla
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+              Datos de respaldo incluidos
+            </span>
+          </div>
+
+          <div class="hero__stats">
+            <div class="hero-stat">
+              <span class="hero-stat__value">06</span>
+              <span class="hero-stat__label">Ejemplos interactivos</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat__value">02</span>
+              <span class="hero-stat__label">Ejercicios con API real</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat__value">250</span>
+              <span class="hero-stat__label">Países en el respaldo</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat__value">0</span>
+              <span class="hero-stat__label">Frameworks o dependencias</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="float-badge float-badge--top" aria-hidden="true">
+            <span class="float-badge__icon">fn</span>
+            <span>fetch() resuelto<small>Promesa cumplida</small></span>
+          </div>
+
+          <div class="code-window hero-window">
+            <div class="code-bar">
+              <span class="code-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+              <span class="code-title"><strong>perfil.js</strong> · JavaScript</span>
+              <button class="copy-btn" type="button" aria-label="Copiar código de ejemplo">Copiar</button>
+            </div>
+            <div class="code-body">
+              <pre><code class="language-js">async function cargarPerfil() {
+  const respuesta = await fetch(
+    "https://jsonplaceholder.typicode.com/users/1"
+  );
+
+  if (!respuesta.ok) {
+    throw new Error(`Error HTTP ${respuesta.status}`);
+  }
+
+  const perfil = await respuesta.json();
+  pintarPerfil(perfil);
+}
+
+// El navegador sigue vivo mientras espera
+cargarPerfil();</code></pre>
+            </div>
+            <div class="hero-window__foot">
+              <span>Promise { &lt;fulfilled&gt; }</span>
+              <span>200 OK · application/json</span>
+            </div>
+          </div>
+
+          <div class="float-badge float-badge--bottom" aria-hidden="true">
+            <span class="float-badge__icon">200</span>
+            <span>200 OK · JSON<small>≈ 180 ms de respuesta</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Ruta de aprendizaje ===== -->
+    <section class="section section--soft" id="ruta" aria-labelledby="ruta-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__copy">
+            <span class="eyebrow">Ruta de aprendizaje</span>
+            <h2 id="ruta-title">Seis pasos, una misma idea: el tiempo importa</h2>
+            <p>Empieza por el event loop y termina consumiendo una API de 250 países. Cada parada tiene demo, código y consola.</p>
+          </div>
+          <div class="section-head__aside">
+            <a class="btn btn--outline btn--sm" href="README.md">
+              Leer el README
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9"/><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="route-grid">
+          <a class="route-card" href="ejemplos/01-asincronia.html">
+            <div class="route-card__top">
+              <span class="route-card__num" aria-hidden="true">01</span>
+              <span class="route-card__tag">Fundamentos</span>
+            </div>
+            <h3>Asincronía y callbacks</h3>
+            <p>El event loop, <code>setTimeout</code> y por qué el orden de ejecución no es el que escribes.</p>
+            <div class="route-card__foot">
+              <span>setTimeout(…, 0)</span>
+              <span class="route-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a class="route-card" href="ejemplos/02-xhr.html">
+            <div class="route-card__top">
+              <span class="route-card__num" aria-hidden="true">02</span>
+              <span class="route-card__tag">El clásico</span>
+            </div>
+            <h3>XMLHttpRequest</h3>
+            <p>La petición que cambió la web. Observa cada <code>readyState</code> y el estado HTTP en vivo.</p>
+            <div class="route-card__foot">
+              <span>xhr.onreadystatechange</span>
+              <span class="route-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a class="route-card" href="ejemplos/03-promesas.html">
+            <div class="route-card__top">
+              <span class="route-card__num" aria-hidden="true">03</span>
+              <span class="route-card__tag">ES6</span>
+            </div>
+            <h3>Promesas</h3>
+            <p>Pendiente, resuelta o rechazada. Lanza una promesa con número aleatorio y sigue su ciclo de vida.</p>
+            <div class="route-card__foot">
+              <span>new Promise((resolve, reject))</span>
+              <span class="route-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a class="route-card" href="ejemplos/04-fetch.html">
+            <div class="route-card__top">
+              <span class="route-card__num" aria-hidden="true">04</span>
+              <span class="route-card__tag">Estándar</span>
+            </div>
+            <h3>Fetch API</h3>
+            <p>La forma moderna de pedir datos. Perfil real, metadatos de la respuesta, JSON y errores simulados.</p>
+            <div class="route-card__foot">
+              <span>await fetch(url)</span>
+              <span class="route-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a class="route-card" href="ejemplos/05-post-formdata.html">
+            <div class="route-card__top">
+              <span class="route-card__num" aria-hidden="true">05</span>
+              <span class="route-card__tag">HTTP + Node</span>
+            </div>
+            <h3>POST con FormData</h3>
+            <p>Envía un formulario al servidor local y lee la respuesta en texto plano, sin frameworks.</p>
+            <div class="route-card__foot">
+              <span>new FormData(form)</span>
+              <span class="route-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a class="route-card route-card--featured" href="ejemplos/06-paises.html">
+            <div class="route-card__top">
+              <span class="route-card__num" aria-hidden="true">06</span>
+              <span class="route-card__tag">Proyecto guiado</span>
+            </div>
+            <h3>250 países, una API retirada</h3>
+            <p>Consume un snapshot local, filtra por región y entiende por qué REST Countries v3.1 ya no responde.</p>
+            <div class="route-card__foot">
+              <span>data/paises.json</span>
+              <span class="route-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Ejercicios ===== -->
+    <section class="section" id="ejercicios" aria-labelledby="ejercicios-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__copy">
+            <span class="eyebrow">Ejercicios completos</span>
+            <h2 id="ejercicios-title">Dos APIs, dos interfaces reales</h2>
+            <p>Mismos conceptos, ahora con datos que cambian todos los días. Incluyen respaldo local para que la clase no se detenga.</p>
+          </div>
+        </div>
+
+        <div class="exercise-grid">
+          <article class="exercise-card">
+            <div class="exercise-card__top">
+              <div>
+                <span class="badge badge--green">API real · CoinGecko</span>
+                <h3>Criptomonedas en tiempo real</h3>
+              </div>
+              <span class="chip chip--green">50 monedas</span>
+            </div>
+            <p class="exercise-card__desc">Capitalización, variación 24 h y minigráficas de siete días. Busca, ordena, cambia de moneda y abre el detalle.</p>
+            <ul class="exercise-card__list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Vista de tarjetas y tabla con modal de detalle</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Conversión USD → COP con tasa de open.er-api.com</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Caché de 60 s, skeletons y respaldo local</li>
+            </ul>
+            <div class="exercise-card__visual" aria-hidden="true">
+              <div class="exercise-card__visual-head"><span>BTC · 7 días</span><span class="text-success">+4,82 %</span></div>
+              <svg viewBox="0 0 300 78" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="spark-home" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#0f8f78" stop-opacity=".25"/>
+                    <stop offset="1" stop-color="#0f8f78" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0 62 L18 58 L36 61 L54 49 L72 53 L90 42 L108 46 L126 37 L144 41 L162 30 L180 35 L198 26 L216 31 L234 20 L252 25 L270 15 L288 19 L300 10 L300 78 L0 78 Z" fill="url(#spark-home)"/>
+                <path d="M0 62 L18 58 L36 61 L54 49 L72 53 L90 42 L108 46 L126 37 L144 41 L162 30 L180 35 L198 26 L216 31 L234 20 L252 25 L270 15 L288 19 L300 10" fill="none" stroke="#0f8f78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="exercise-card__foot">
+              <div class="chip-row">
+                <span class="chip">fetch + caché</span>
+                <span class="chip">SVG</span>
+                <span class="chip">modal</span>
+              </div>
+              <a class="btn btn--primary btn--sm" href="ejercicios/01-criptomonedas.html">
+                Abrir solución
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="exercise-card exercise-card--trm">
+            <div class="exercise-card__top">
+              <div>
+                <span class="badge badge--amber">Datos abiertos · Socrata</span>
+                <h3>TRM de Colombia</h3>
+              </div>
+              <span class="chip chip--amber">32sa-8pi3</span>
+            </div>
+            <p class="exercise-card__desc">La tasa representativa del mercado desde datos.gov.co, con gráfica interactiva, estadísticas y descarga CSV.</p>
+            <ul class="exercise-card__list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Gráfica SVG con tooltip al mover el puntero</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Períodos de 30, 90, 365 y 500 días</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Respaldo de 500 registros y exportación CSV</li>
+            </ul>
+            <div class="exercise-card__visual" aria-hidden="true">
+              <div class="exercise-card__visual-head"><span>USD / COP · 90 días</span><span class="text-danger">−1,24 %</span></div>
+              <svg viewBox="0 0 300 96" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="spark-trm" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#f0a11a" stop-opacity=".26"/>
+                    <stop offset="1" stop-color="#f0a11a" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0 30 L20 34 L40 26 L60 38 L80 33 L100 45 L120 41 L140 52 L160 47 L180 58 L200 54 L220 62 L240 57 L260 66 L280 62 L300 70 L300 96 L0 96 Z" fill="url(#spark-trm)"/>
+                <path d="M0 30 L20 34 L40 26 L60 38 L80 33 L100 45 L120 41 L140 52 L160 47 L180 58 L200 54 L220 62 L240 57 L260 66 L280 62 L300 70" fill="none" stroke="#f0a11a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="300" cy="70" r="3.5" fill="#f0a11a" stroke="#fff" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="exercise-card__foot">
+              <div class="chip-row">
+                <span class="chip">Socrata</span>
+                <span class="chip">SVG interactivo</span>
+                <span class="chip">CSV</span>
+              </div>
+              <a class="btn btn--dark btn--sm" href="ejercicios/02-datos-gov-co.html">
+                Abrir solución
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Cómo ejecutar ===== -->
+    <section class="section section--soft" id="ejecutar" aria-labelledby="ejecutar-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__copy">
+            <span class="eyebrow">Puesta en marcha</span>
+            <h2 id="ejecutar-title">Tres pasos y cero instalaciones</h2>
+            <p>El proyecto solo necesita Node.js 18+ o PHP 8+. No hay <code>npm install</code>, bundler ni dependencias.</p>
+          </div>
+        </div>
+
+        <div class="run-grid">
+          <div class="run-aside">
+            <ol class="steps">
+              <li class="step">
+                <span class="step__num" aria-hidden="true">01</span>
+                <div class="step__body">
+                  <h3>Abre una terminal en la carpeta</h3>
+                  <p>Entra a <code>01-demo</code>, donde están <code>index.html</code> y <code>server.js</code>.</p>
+                  <span class="chip">cd 01-demo</span>
+                </div>
+              </li>
+              <li class="step">
+                <span class="step__num" aria-hidden="true">02</span>
+                <div class="step__body">
+                  <h3>Inicia el servidor local</h3>
+                  <p>Usa Node (<code>npm start</code>) o PHP (<code>php -S localhost:5500</code>).</p>
+                  <span class="chip">npm start</span>
+                </div>
+              </li>
+              <li class="step">
+                <span class="step__num" aria-hidden="true">03</span>
+                <div class="step__body">
+                  <h3>Abre la dirección en el navegador</h3>
+                  <p>Los módulos ES y <code>fetch</code> requieren un servidor HTTP, no <code>file://</code>.</p>
+                  <span class="chip">http://localhost:5500</span>
+                </div>
+              </li>
+            </ol>
+
+            <div class="callout callout--warning">
+              <span class="callout__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
+              </span>
+              <div class="callout__body">
+                <strong>No abras los HTML con doble clic</strong>
+                <p>Con <code>file://</code> el navegador bloquea los módulos ES, el JSON local y las peticiones al endpoint. Siempre usa el servidor.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="run-aside">
+            <div class="code-window terminal-card">
+              <div class="code-bar">
+                <span class="code-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="code-title"><strong>terminal</strong> · bash</span>
+                <button class="copy-btn" type="button" aria-label="Copiar comandos de la terminal">Copiar</button>
+              </div>
+              <div class="code-body">
+                <pre><code class="language-bash"># 1. Ubícate en el proyecto
+cd 01-demo
+
+# 2. Levanta el servidor sin instalar nada
+npm start
+
+# Alternativa con PHP 8+
+php -S localhost:5500
+
+# 3. Abre en el navegador
+# http://localhost:5500</code></pre>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel__head">
+                <div>
+                  <h3>APIs utilizadas</h3>
+                  <p>Todas las demos tienen respaldo local.</p>
+                </div>
+                <span class="badge badge--green">En vivo</span>
+              </div>
+              <div class="panel__body">
+                <ul class="api-list">
+                  <li class="api-item">
+                    <span class="api-item__icon" aria-hidden="true">CG</span>
+                    <span class="api-item__body">
+                      <strong>CoinGecko</strong>
+                      <span>api.coingecko.com/api/v3</span>
+                    </span>
+                    <a class="api-item__link" href="https://www.coingecko.com/es" aria-label="Abrir CoinGecko">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9"/><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"/></svg>
+                    </a>
+                  </li>
+                  <li class="api-item">
+                    <span class="api-item__icon" aria-hidden="true">DAT</span>
+                    <span class="api-item__body">
+                      <strong>datos.gov.co</strong>
+                      <span>resource/32sa-8pi3.json</span>
+                    </span>
+                    <a class="api-item__link" href="https://www.datos.gov.co/" aria-label="Abrir datos.gov.co">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9"/><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"/></svg>
+                    </a>
+                  </li>
+                  <li class="api-item">
+                    <span class="api-item__icon" aria-hidden="true">JPH</span>
+                    <span class="api-item__body">
+                      <strong>JSONPlaceholder</strong>
+                      <span>jsonplaceholder.typicode.com</span>
+                    </span>
+                    <a class="api-item__link" href="https://jsonplaceholder.typicode.com/" aria-label="Abrir JSONPlaceholder">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9"/><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"/></svg>
+                    </a>
+                  </li>
+                  <li class="api-item">
+                    <span class="api-item__icon" aria-hidden="true">FLG</span>
+                    <span class="api-item__body">
+                      <strong>flagcdn</strong>
+                      <span>flagcdn.com/w320/co.png</span>
+                    </span>
+                    <a class="api-item__link" href="https://flagcdn.com/" aria-label="Abrir flagcdn">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3h7v7M21 3l-9 9"/><path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"/></svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="index.html" aria-label="Módulo A, ir a la portada">
+            <span class="brand-mark" aria-hidden="true">{ }</span>
+            <span class="brand-text">
+              <strong>Módulo A</strong>
+              <small>JS asíncrono y APIs</small>
+            </span>
+          </a>
+          <p class="footer-about">Material didáctico de Procesamiento de datos · SENA ADSO. Construido con HTML, CSS y JavaScript vanilla, sin dependencias.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Ejemplos</h3>
+          <ul>
+            <li><a href="ejemplos/01-asincronia.html">01 · Asincronía</a></li>
+            <li><a href="ejemplos/02-xhr.html">02 · XMLHttpRequest</a></li>
+            <li><a href="ejemplos/03-promesas.html">03 · Promesas</a></li>
+            <li><a href="ejemplos/04-fetch.html">04 · Fetch API</a></li>
+            <li><a href="ejemplos/05-post-formdata.html">05 · POST FormData</a></li>
+            <li><a href="ejemplos/06-paises.html">06 · Países</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Ejercicios</h3>
+          <ul>
+            <li><a href="ejercicios/01-criptomonedas.html">Criptomonedas</a></li>
+            <li><a href="ejercicios/02-datos-gov-co.html">TRM · datos.gov.co</a></li>
+            <li><a href="index.html#ejecutar">Cómo ejecutar</a></li>
+            <li><a href="README.md">README</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Event_loop">MDN · Event loop</a></li>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/API/Fetch_API">MDN · Fetch API</a></li>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/API/FormData">MDN · FormData</a></li>
+            <li><a href="https://www.datos.gov.co/">datos.gov.co</a></li>
+            <li><a href="https://www.coingecko.com/es/api">CoinGecko API</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Módulo A · Procesamiento de datos. Licencia MIT.</p>
+        <div class="footer-bottom__links">
+          <a href="README.md">Documentación</a>
+          <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">MDN JavaScript</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

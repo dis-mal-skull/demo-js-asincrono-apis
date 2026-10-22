@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f8f78">
+  <meta name="description" content="Demo interactiva de promesas en JavaScript: estado pendiente, resuelta y rechazada, con historial y consola.">
+  <title>Promesas · Módulo A</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js" defer></script>
+  <script type="module" src="../assets/js/pages/promesas.js"></script>
+</head>
+<body data-section="ejemplos">
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Módulo A, ir a la portada">
+        <span class="brand-mark" aria-hidden="true">{ }</span>
+        <span class="brand-text"><strong>Módulo A</strong><small>JS asíncrono y APIs</small></span>
+      </a>
+      <nav class="nav" id="menu-principal" aria-label="Navegación principal">
+        <a class="nav-link" data-nav="inicio" href="../index.html">Inicio</a>
+        <a class="nav-link" data-nav="ejemplos" href="../index.html#ruta">Ejemplos</a>
+        <a class="nav-link" data-nav="ejercicios" href="../index.html#ejercicios">Ejercicios</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--primary btn--sm btn--cta" href="../ejercicios/01-criptomonedas.html">Abrir ejercicio</a>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú de navegación">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div>
+          <nav aria-label="Ruta de navegación">
+            <ol class="breadcrumb">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../index.html#ruta">Ejemplos</a></li>
+              <li><span aria-current="page">Promesas</span></li>
+            </ol>
+          </nav>
+          <span class="eyebrow" style="margin-top:1rem">Ejemplo 03 · ES6</span>
+          <h1>Tres estados, una decisión</h1>
+          <p class="page-hero__lead">Una promesa empieza pendiente y termina de una sola forma: resuelta o rechazada. Lanza números aleatorios y observa el ciclo completo con <code>then</code>, <code>catch</code> y <code>finally</code>.</p>
+          <div class="page-hero__meta">
+            <span class="chip">Promise</span>
+            <span class="chip">then / catch / finally</span>
+            <span class="chip chip--green">Criterio: pares resuelven</span>
+          </div>
+        </div>
+        <aside class="learn-card">
+          <h2>Vas a aprender</h2>
+          <ul class="learn-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Crear una promesa con <code>resolve</code> y <code>reject</code></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Distinguir sus tres estados</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Encadenar <code>then</code> y capturar errores</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Ejecutar operaciones en serie</li>
+          </ul>
+          <p class="learn-card__foot">Duración estimada · 15 minutos</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-label="Laboratorio de promesas">
+      <div class="container">
+        <div class="demo-grid">
+          <div class="panel">
+            <div class="panel__head">
+              <div>
+                <h2>Máquina de promesas</h2>
+                <p>Genera un número entre 0 y 9. Si es par, la promesa se resuelve; si es impar, se rechaza.</p>
+              </div>
+              <span class="badge badge--green"><span class="badge__dot"></span> Interactivo</span>
+            </div>
+            <div class="demo-stage promise-board">
+              <div class="promise-head">
+                <div>
+                  <span class="eyebrow eyebrow--plain">Criterio documentado</span>
+                  <p class="small muted" style="margin:.2rem 0 0">Pares → <code>resolve()</code> · Impares → <code>reject()</code></p>
+                </div>
+                <span class="promise-state" data-state="inicial">En espera</span>
+              </div>
+
+              <div class="progress" role="progressbar" aria-label="Progreso de la promesa" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-progress>
+                <div class="progress__bar" data-meter></div>
+              </div>
+
+              <div class="promise-result" data-result data-tone="">
+                <span class="promise-number" data-number aria-hidden="true">?</span>
+                <div>
+                  <strong data-result-title>Sin ejecuciones todavía</strong>
+                  <p data-result-msg>Pulsa «Lanzar promesa» para iniciar el temporizador de 1,2 segundos.</p>
+                  <span class="chip" data-duration>Duración —</span>
+                </div>
+              </div>
+
+              <div class="btn-row">
+                <button class="btn btn--primary" type="button" data-run>
+                  Lanzar promesa
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 4 13 8-13 8V4Z"/></svg>
+                </button>
+                <button class="btn btn--outline" type="button" data-run-five>Lanzar 5 en serie</button>
+                <button class="btn btn--ghost btn--sm" type="button" data-clear-history>Limpiar historial</button>
+                <span class="demo-stage__hint">La promesa siempre tarda 1,2 s.</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="demo-grid__aside">
+            <div class="console" data-console>
+              <div class="console__bar">
+                <span class="console__lights" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="console__title">consola · promesas</span>
+                <div class="console__tools">
+                  <span class="console__count" data-console-count>0</span>
+                  <button class="console__clear" type="button" data-console-clear>Limpiar</button>
+                </div>
+              </div>
+              <div class="console__log" data-console-log aria-live="polite" aria-label="Salida de la consola">
+                <div class="console-empty">Abre la consola del navegador: también se espeja allí.</div>
+              </div>
+            </div>
+            <div class="callout callout--info">
+              <span class="callout__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+              </span>
+              <div class="callout__body">
+                <strong>Una promesa no se “devuelve”</strong>
+                <p>Se entrega de inmediato como objeto. El valor llega después, cuando la operación asíncrona termina.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="panel" style="margin-top:1.25rem">
+          <div class="panel__head">
+            <div>
+              <h3>Historial de ejecuciones</h3>
+              <p>Se conserva durante la sesión, en orden de llegada.</p>
+            </div>
+            <span class="badge badge--neutral" data-history-count>0 ejecuciones</span>
+          </div>
+          <div class="panel__body">
+            <ul class="history-list" data-history aria-live="polite">
+              <li class="history-item" data-history-empty>
+                <span class="history-item__num" aria-hidden="true">—</span>
+                <span class="muted small">Todavía no hay ejecuciones.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" aria-labelledby="teoria-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__copy">
+            <span class="eyebrow">Cómo funciona</span>
+            <h2 id="teoria-title">El valor llega cuando esté listo</h2>
+            <p>La promesa representa el resultado futuro de una operación. El consumidor decide qué hacer con el éxito o con el error.</p>
+          </div>
+        </div>
+
+        <div class="lesson-grid">
+          <div class="code-window">
+            <div class="code-bar">
+              <span class="code-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+              <span class="code-title"><strong>promesa.js</strong> · resolve / reject</span>
+              <button class="copy-btn" type="button">Copiar</button>
+            </div>
+            <div class="code-body">
+              <pre><code class="language-js">const numero = Math.floor(Math.random() * 10);
+
+const promesa = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (numero % 2 === 0) {
+      resolve({ numero, mensaje: "Número par" });
+    } else {
+      reject(new Error("Número impar: " + numero));
+    }
+  }, 1200);
+});
+
+promesa
+  .then((datos) => console.log("Resuelta:", datos))
+  .catch((error) => console.error("Rechazada:", error.message))
+  .finally(() => console.log("Siempre se ejecuta"));</code></pre>
+            </div>
+          </div>
+
+          <div class="lesson-stack">
+            <div class="card card--pad">
+              <h3>Los tres estados</h3>
+              <ul class="lesson-list" style="margin-top:1rem">
+                <li><div><strong>Pendiente</strong>La operación aún no produce valor ni error.</div></li>
+                <li><div><strong>Resuelta</strong>El valor está disponible y pasa al siguiente <code>then</code>.</div></li>
+                <li><div><strong>Rechazada</strong>El error viaja al <code>catch</code> más cercano.</div></li>
+              </ul>
+            </div>
+            <div class="callout callout--warning">
+              <span class="callout__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
+              </span>
+              <div class="callout__body">
+                <strong>No olvides el catch</strong>
+                <p>Un rechazo sin manejar genera <code>UnhandledPromiseRejection</code> y puede detener la ejecución en Node.</p>
+              </div>
+            </div>
+            <details class="disclosure">
+              <summary>¿then y catch devuelven la misma promesa?</summary>
+              <div class="disclosure__body">
+                <p>No: devuelven una <strong>nueva</strong> promesa. Por eso se pueden encadenar transformaciones sin mutar la original. <code>finally</code> también devuelve una promesa y conserva el valor o el error.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <nav class="pager" aria-label="Navegación entre ejemplos">
+          <a class="pager__link" href="02-xhr.html">
+            <span>Anterior</span>
+            <strong>← XMLHttpRequest</strong>
+          </a>
+          <a class="pager__link pager__link--next" href="04-fetch.html">
+            <span>Siguiente</span>
+            <strong>Fetch API →</strong>
+          </a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="../index.html" aria-label="Módulo A, ir a la portada">
+            <span class="brand-mark" aria-hidden="true">{ }</span>
+            <span class="brand-text"><strong>Módulo A</strong><small>JS asíncrono y APIs</small></span>
+          </a>
+          <p class="footer-about">Material didáctico de Procesamiento de datos · SENA ADSO. HTML, CSS y JavaScript vanilla, sin dependencias.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Ejemplos</h3>
+          <ul>
+            <li><a href="01-asincronia.html">01 · Asincronía</a></li>
+            <li><a href="02-xhr.html">02 · XMLHttpRequest</a></li>
+            <li><a href="03-promesas.html">03 · Promesas</a></li>
+            <li><a href="04-fetch.html">04 · Fetch API</a></li>
+            <li><a href="05-post-formdata.html">05 · POST FormData</a></li>
+            <li><a href="06-paises.html">06 · Países</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Ejercicios</h3>
+          <ul>
+            <li><a href="../ejercicios/01-criptomonedas.html">Criptomonedas</a></li>
+            <li><a href="../ejercicios/02-datos-gov-co.html">TRM · datos.gov.co</a></li>
+            <li><a href="../index.html#ejecutar">Cómo ejecutar</a></li>
+            <li><a href="../README.md">README</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise">MDN · Promise</a></li>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Using_promises">MDN · Usar promesas</a></li>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/async_function">MDN · async/await</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Módulo A · Procesamiento de datos. Licencia MIT.</p>
+        <div class="footer-bottom__links">
+          <a href="../README.md">Documentación</a>
+          <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">MDN JavaScript</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
